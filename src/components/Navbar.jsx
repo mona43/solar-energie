@@ -2,21 +2,27 @@ import { useState } from "react";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeLink, setActiveLink] = useState("#home"); // العنصر النشط
+  const [activeLink, setActiveLink] = useState("#home"); 
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
   const handleLinkClick = (link) => {
-    setActiveLink(link); // تغيير العنصر النشط
-    setIsOpen(false); // إغلاق القائمة عند النقر (للشاشات الصغيرة)
+    setActiveLink(link);
+    setIsOpen(false); 
   };
 
   return (
     <nav className="navbar">
       <div className="container">
-        <h1 className="logo">MyApp</h1>
+      <img
+          src="logo.jpg"
+          width={40}
+          height={45}
+          className="navbar-brand rounded-5 mx-2"
+          alt="Logo"
+        />
         <button className="menu-toggle" onClick={toggleMenu}>
           ☰
         </button>
