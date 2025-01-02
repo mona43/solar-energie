@@ -18,9 +18,9 @@ function Navbar() {
       <div className="container">
       <img
           src="logo.jpg"
-          width={40}
-          height={45}
-          className="navbar-brand rounded-5 mx-2"
+          width={100}
+          height={100}
+          className="navbar-brand rounded-8 mx-2 logo"
           alt="Logo"
         />
         <button className="menu-toggle" onClick={toggleMenu}>
