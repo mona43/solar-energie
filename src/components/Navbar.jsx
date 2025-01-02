@@ -1,3 +1,4 @@
+import React from "react";
 import { useState } from "react";
 
 function Navbar() {
@@ -29,7 +30,7 @@ function Navbar() {
         <ul className={`nav-links ${isOpen ? "active" : ""}`}>
           <li>
             <a
-              href="#home"
+              href="/"
               className={activeLink === "#home" ? "active" : ""}
               onClick={() => handleLinkClick("#home")}
             >
@@ -38,7 +39,7 @@ function Navbar() {
           </li>
           <li>
             <a
-              href="#about"
+              href="about"
               className={activeLink === "#about" ? "active" : ""}
               onClick={() => handleLinkClick("#about")}
             >
