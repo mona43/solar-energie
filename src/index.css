@@ -188,7 +188,7 @@ hr{
     flex-direction: column;
     background-color: var(--primary-color);
     position: absolute;
-    top: 40px;
+    top: 42.5px;
     right: 10px;
     padding: 1rem;
     border-radius: 5px;
