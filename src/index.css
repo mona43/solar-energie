@@ -5,6 +5,7 @@
   --light-color: #f4f4f4;
   --danger-color: #d9e3c43c;
 }
+
 body{
   margin: 0;
   padding: 0;
@@ -161,6 +162,35 @@ hr{
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
 }
+
+/* solar page */
+
+.video-solar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw; 
+  height: 100vh;
+  object-fit: cover; 
+  z-index: -1;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.title-solar{
+  text-align: left;
+  width: 60%;
+  /* margin: auto; */
+  height: 70vh;
+  color: var(--light-color);
+  font-size: 36px;  
+  margin: 80px;
+}
+
+
 
 /* Responsive styles */
 .menu-toggle {

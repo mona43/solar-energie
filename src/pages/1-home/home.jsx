@@ -5,7 +5,7 @@ const Home = () => {
       <div className="sections-container" >
         
         {/* Energy Section */}
-        <div className="section energy-section" role='Link' onClick={() => window.location.href = '/about'}>
+        <div className="section energy-section" role='Link' onClick={() => window.location.href = '/energie'}>
           <h2 className="home-title">Energie</h2>
           <hr />
           <img className="section-image" src="Energie.jpg" alt="Electrical Panel" height={390} />

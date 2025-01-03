@@ -3,7 +3,7 @@ import { useState } from "react";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeLink, setActiveLink] = useState(""); 
+  const [activeLink, setActiveLink] = useState("/about"); 
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -31,10 +31,19 @@ function Navbar() {
           <li>
             <a
               href="/"
-              className={activeLink === "#home" ? "active" : ""}
-              onClick={() => handleLinkClick("#home")}
+              className={activeLink === "/" ? "active" : ""}
+              onClick={() => handleLinkClick("/")}
             >
               Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="/solar"
+              className={activeLink === "/solar" ? "active" : ""}
+              onClick={() => handleLinkClick("/solar")}
+            >
+              Solar
             </a>
           </li>
           <li>
