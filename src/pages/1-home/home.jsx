@@ -2,10 +2,10 @@ import React from 'react';
 
 const Home = () => {
   return (
-      <div className="sections-container">
+      <div className="sections-container" >
         
         {/* Energy Section */}
-        <div className="section energy-section">
+        <div className="section energy-section" role='Link' onClick={() => window.location.href = '/about'}>
           <h2 className="home-title">Energie</h2>
           <hr />
           <img className="section-image" src="Energie.jpg" alt="Electrical Panel" height={390} />
@@ -16,7 +16,7 @@ const Home = () => {
         </div>
 
         {/* Solar Section */}
-        <div className="section solar-section">
+        <div className="section solar-section" role='Link' onClick={() => window.location.href = '/solar'}>
           <h2 className="home-title">Solar</h2>
           <hr />
           <img className="section-image" src="Solar.jpg" alt="Solar Panels" height={390}/>
