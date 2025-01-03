@@ -35,4 +35,5 @@ export default [
       ],
     },
   },
+  no-unused-vars
 ]
