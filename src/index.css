@@ -177,8 +177,8 @@ hr{
     display: block;
   }
 .logo{
-  width: 10%;
-  height: 10%;
+  width: 40px;
+  height: 40px;
 }
 #root > div > nav > div > ul{
   margin: 0 !important;
