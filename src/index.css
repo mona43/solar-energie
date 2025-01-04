@@ -227,25 +227,21 @@ hr{
 .Speichersysteme-section{
   position: relative;
   display: flex;
-  flex-direction: row;
+  flex: wrap;
   align-items: center;
   height: 50vh;
 }
+
 #root > div > div.solar-container > div.Speichersysteme-section > div:nth-child(2){
   padding: 40px;
   background-color: var(--light-color);
-  width: 50%;
-  /* margin-left: 50px; */
   position: absolute;
+  width: 50%;
   top: 0;
   right: 0;
   bottom: 0;
 }
-/* .Speichersysteme-img{
-width: 100%;
-height: 100%;
-background-color: #01a029;
-} */
+
 /* Responsive styles */
 .menu-toggle {
   display: none;
@@ -283,7 +279,11 @@ background-color: #01a029;
     right: 10px;
     padding: 1rem;
     border-radius: 5px;
-  }
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
 
   .nav-links.active {
     display: flex;
@@ -322,11 +322,17 @@ background-color: #01a029;
     font-size: 24px;
   }
   p{
-    font-size: 16px;
+    font-size: 12px;
   }
-  .Speichersysteme-section{
-    flex-direction: column;
-  }
+
+   #root > div > div.solar-container > div.Speichersysteme-section > div:nth-child(2){
+    width: 94%;
+    top: 40%;
+    padding: 10px;
+    margin: auto;
+    left: 0;
+    right: 0;
+   }
 }
 
 
