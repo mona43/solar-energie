@@ -30,6 +30,23 @@ const Solar = () => {
             </div>
             
         </div>
+        <section className="solar-storage-section">
+            <div className="storage-item">
+                <img src="box.svg" alt="" className='icon' />
+                <h3>Speicherung im Photovoltaiksystem</h3>
+                <p>Das Speichersystem besteht aus Batterien, die die von den Solarmodulen erzeugte Energie speichern, die nicht sofort verbraucht wird. Diese Speicherung ermöglicht die Nutzung der Energie zu einem späteren Zeitpunkt, beispielsweise am Abend oder in der Nacht.</p>
+            </div>
+            <div className="storage-item" >
+                <img src="light-bulb.svg" alt="" className='icon'/>
+                <h3>Überschüssige Energie speichern</h3>
+                <p>Wenn die Solarmodule tagsüber überschüssige Energie erzeugen, wird diese in Batterien gespeichert, um sie zu nutzen, wenn die Sonneneinstrahlung nachlässt oder keine sofortige Energieproduktion stattfindet.</p>
+            </div>
+            <div className="storage-item">
+                <img src="moon.svg" alt="" className='icon'/>
+                <h3>Nutzung der Energie in der Nacht</h3>
+                <p>Batterien helfen dabei, während der Nachtstunden Strom zu liefern, um sicherzustellen, dass elektrische Geräte ohne Unterbrechung verwendet werden können, auch wenn keine direkte Sonneneinstrahlung vorhanden ist.</p>
+            </div>
+        </section>
         
         <video src="solar.mp4" className='video-solar' autoPlay loop muted ></video>
     </div>

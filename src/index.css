@@ -20,7 +20,9 @@ body{
 }
 /* Navbar container */
 .navbar {
-  /* width: 100%; */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   background-color: var(--primary-color);
   color: #fff;
   padding:1px 50px;
@@ -230,16 +232,57 @@ hr{
   flex: wrap;
   align-items: center;
   height: 50vh;
+  padding: 40px;
 }
 
 #root > div > div.solar-container > div.Speichersysteme-section > div:nth-child(2){
-  padding: 40px;
+  padding: 30px;
   background-color: var(--light-color);
   position: absolute;
   width: 50%;
   top: 0;
   right: 0;
   bottom: 0;
+}
+.solar-storage-section {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 80px;
+  background-color: var(--light-color);
+}
+
+.storage-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid var(--danger-color);
+  border-radius: 8px;
+  transition: 0.5s;
+}
+.storage-item:hover{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+.storage-item p{
+  font-size: 16px;
+  color: var(--dark-color);
+}
+h3 {
+    margin: 0;
+    font-size: 1.4rem;
+    color: var(--primary-color);
+}
+.icon {
+  width: 40px;
+  height: 40px;
 }
 
 /* Responsive styles */
@@ -253,6 +296,19 @@ hr{
 }
 
 @media (max-width: 768px) {
+  .solar-storage-section{
+    flex-direction: column;
+    width: auto;
+  }
+  h3{
+    font-size: 1rem;
+  }
+  .storage-item{
+    width: 100%;
+  }
+  .storage-item p{
+    font-size: 12px;
+  }
   .menu-toggle {
     display: block;
   }
@@ -335,6 +391,7 @@ hr{
   }
   .Photovoltaik-section{
     flex-direction: column;
+    padding: 50px;
   }
   h2{
     font-size: 24px;
@@ -346,14 +403,14 @@ hr{
     font-size: 18px;
     padding-top: 15px;
   }
-   #root > div > div.solar-container > div.Speichersysteme-section > div:nth-child(2){
+  #root > div > div.solar-container > div.Speichersysteme-section > div:nth-child(2){
     width: 94%;
     top: 50%;
     padding: 10px;
     margin: auto;
     left: 0;
     right: 0;
-   }
+}
 }
 
 
