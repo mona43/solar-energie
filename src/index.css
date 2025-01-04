@@ -299,12 +299,14 @@ h3 {
   .solar-storage-section{
     flex-direction: column;
     width: auto;
+    padding: 48px;
   }
   h3{
     font-size: 1rem;
   }
   .storage-item{
     width: 100%;
+    padding: 5px;
   }
   .storage-item p{
     font-size: 12px;
