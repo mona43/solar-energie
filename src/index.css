@@ -5,7 +5,14 @@
   --light-color: #f4f4f4;
   --danger-color: #d9e3c43c;
 }
-
+h2{
+  color: var(--primary-color);
+  font-size: 36px;
+}
+p{
+  color: var(--dark-color);
+  font-size: 18px;
+}
 body{
   margin: 0;
   padding: 0;
@@ -67,8 +74,8 @@ footer {
   padding: 20px 0; 
   text-align: center;
   font-size: 1rem;
+  
 }
-
 .footer-container {
   max-width: 1200px; 
   margin: 0 auto; 
@@ -100,13 +107,14 @@ footer {
 .footer-container p {
   margin-top: 15px; 
   font-size: 0.9rem; 
+  color: var(--light-color);
 }
 
 
 /* General Styles */
 .home-title {
   text-align: center;
-  color: #2d6a4f;
+  color: var(--primary-color);
   font-size: 36px;
 }
 
@@ -183,15 +191,61 @@ hr{
 .title-solar{
   text-align: left;
   width: 60%;
-  /* margin: auto; */
-  height: 70vh;
+  height: 60vh;
   color: var(--light-color);
   font-size: 36px;  
   margin: 80px;
 }
-
-
-
+.title-solar p{
+  color: #fff;
+  font-size: 26px;
+}
+.Photovoltaik-section{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 40px;
+  background-color: var(--light-color);
+}
+.Photovoltaik-section img{
+  width: 100%;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  transition: 0.5s;
+}
+.Photovoltaik-section:hover img{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+.Speichersysteme-section{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 50vh;
+}
+#root > div > div.solar-container > div.Speichersysteme-section > div:nth-child(2){
+  padding: 40px;
+  background-color: var(--light-color);
+  width: 50%;
+  /* margin-left: 50px; */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+/* .Speichersysteme-img{
+width: 100%;
+height: 100%;
+background-color: #01a029;
+} */
 /* Responsive styles */
 .menu-toggle {
   display: none;
@@ -205,6 +259,13 @@ hr{
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
+  }
+  .title-solar{
+    text-align: left;
+    width: 80%;
+    margin: auto;
+    height: 50vh;
+    font-size: 18px;
   }
 .logo{
   width: 40px;
@@ -253,6 +314,18 @@ hr{
   }
   .section-image{
     height: auto;
+  }
+  .Photovoltaik-section{
+    flex-direction: column;
+  }
+  h2{
+    font-size: 24px;
+  }
+  p{
+    font-size: 16px;
+  }
+  .Speichersysteme-section{
+    flex-direction: column;
   }
 }
 
