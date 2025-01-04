@@ -20,6 +20,23 @@ const Solar = () => {
                 <img src="Photovoltaik.png" alt="" />
             </div>
         </div>
+        <section className="solar-storage-section">
+      <div className="storage-item">
+        <img src="solar-panel.svg" alt="" className='icon' />
+        <h3>Was ist Photovoltaik?</h3>
+        <p>Photovoltaik bezieht sich auf die Umwandlung von Sonnenlicht in elektrische Energie mithilfe von Solarzellen. Diese Technologie wird weltweit genutzt, um saubere und nachhaltige Energie zu erzeugen.</p>
+      </div>
+      <div className="storage-item" >
+        <img src="sun.svg" alt="" className='icon'/>
+        <h3>Wie funktioniert Photovoltaik?</h3>
+        <p>Wenn Sonnenlicht auf eine Solarzelle trifft, erzeugt das Licht eine elektrische Spannung, die dann in nutzbare elektrische Energie umgewandelt wird. Diese Energie kann sofort genutzt oder gespeichert werden.</p>
+      </div>
+      <div className="storage-item">
+        <img src="storage (2).svg" alt="" className='icon'/>
+        <h3>Vorteile der Photovoltaik</h3>
+        <p>Photovoltaik ist eine erneuerbare Energiequelle, die keine schädlichen Emissionen verursacht. Sie hilft dabei, den Kohlenstoff-Fußabdruck zu reduzieren und Energieunabhängigkeit zu fördern.</p>
+      </div>
+        </section>
         <div className="Speichersysteme-section">
             <div className="Speichersysteme-img"></div>
             <div styleName='Speichersysteme-container'>

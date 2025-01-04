@@ -48,11 +48,11 @@ function Navbar() {
           </li>
           <li>
             <a
-              href="/about"
-              className={activeLink === "#about" ? "active" : ""}
-              onClick={() => handleLinkClick("#about")}
+              href="/energie"
+              className={activeLink === "/energie" ? "active" : ""}
+              onClick={() => handleLinkClick("/energie")}
             >
-              About
+              Energie
             </a>
           </li>
           <li>
