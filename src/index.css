@@ -38,8 +38,8 @@ body{
 }
 
 .logo {
-  width: 10% ;
-  height: 10%;
+  width: 70px ;
+  height: 70px;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -303,14 +303,32 @@ hr{
   
   .section {
     flex-direction: column;
+    margin: 5px;
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 
+  hr{
+    width: 50%;
+    height: 2px;
+    margin: 10px;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    color: var(--primary-color);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+  }
   .section-image {
     width: 100%;
     margin-bottom: 20px;
   }
   .sections-container{
     flex-direction: column;
+  }
+  .section-text{
+    font-size: 14px;
   }
   .section-image{
     height: auto;
@@ -324,10 +342,13 @@ hr{
   p{
     font-size: 12px;
   }
-
+  .title-solar p{
+    font-size: 18px;
+    padding-top: 15px;
+  }
    #root > div > div.solar-container > div.Speichersysteme-section > div:nth-child(2){
     width: 94%;
-    top: 40%;
+    top: 50%;
     padding: 10px;
     margin: auto;
     left: 0;
