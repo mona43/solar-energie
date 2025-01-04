@@ -243,6 +243,7 @@ hr{
   top: 0;
   right: 0;
   bottom: 0;
+  height: 350px;
 }
 .solar-storage-section {
   display: flex;
@@ -412,6 +413,7 @@ h3 {
     margin: auto;
     left: 0;
     right: 0;
+    height: auto;
 }
 }
 
