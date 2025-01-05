@@ -68,16 +68,18 @@ const Energie = () => {
     </p>
   </div>
         </section>
+        
         <div className="Photovoltaik-section ">
+            <div className="Elektrokontrolle">
+                <img src="Planung.jpg" alt="" />
+            </div>
             <div className="Photovoltaik-container">
                 <h2>Planung</h2>
                 <p>
                 Zögern Sie nicht, uns zu kontaktieren. Wir werden Sie rasch mit Informationen betreffend Ihrer Wünsche und Bedürfnisse bedienen.
                 </p>
             </div>
-            <div className="Elektrokontrolle">
-                <img src="Planung.jpg" alt="" />
-            </div>
+            
             
         </div>
         <section className="solar-storage-section">
