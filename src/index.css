@@ -5,9 +5,10 @@
   --light-color: #f4f4f4;
   --danger-color: #d9e3c43c;
 }
+
 h2{
   color: var(--primary-color);
-  font-size: 36px;
+  font-size: 34px;
 }
 p{
   color: var(--dark-color);
@@ -210,7 +211,7 @@ hr{
   background-color: var(--light-color);
 }
 .Photovoltaik-section img{
-  width: 100%;
+  width: 90%;
   border-radius: 8px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
@@ -266,11 +267,11 @@ hr{
 }
 .storage-item:hover{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  transform: scale(1.05);
-  -webkit-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  -o-transform: scale(1.05);
+  transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
 }
 .storage-item p{
   font-size: 16px;
@@ -284,6 +285,82 @@ h3 {
 .icon {
   width: 40px;
   height: 40px;
+}
+/* Energie page */
+.energie-container {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('energie\ bg.jpg') center/cover no-repeat;
+  height: 80vh; 
+  width: 100vw;
+  display: flex; 
+}
+.waves {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7px; 
+}
+
+.Elektrokontrolle{
+  width: 80%;
+}
+.light-bulb{
+  height: 65vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('light.jpg') center/cover no-repeat;
+  background-attachment: fixed;
+}
+
+/* Animation */
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+
+
+
+.title-energie {
+  text-align: left;
+  width: 60%;
+  height: 60vh;
+  color: var(--light-color);
+  font-size: 36px;  
+  margin: 80px;
+}
+.title-energie p{
+  color: #fff;
+  font-size: 24px;
 }
 
 /* Responsive styles */
@@ -414,6 +491,25 @@ h3 {
     left: 0;
     right: 0;
     height: auto;
+}
+.title-energie{
+  font-size: 24px;
+  margin: 20px;
+}
+.title-energie p{
+  font-size: 18px;
+}
+.energie-container{
+  height: 50vh;
+}
+.waves{
+  height: 7vh;
+}
+.Photovoltaik-img{
+  width: 100%;
+}
+.light-bulb{
+  height: 40vh;
 }
 }
 

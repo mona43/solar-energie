@@ -34,7 +34,7 @@ function Navbar() {
               className={activeLink === "/" ? "active" : ""}
               onClick={() => handleLinkClick("/")}
             >
-              Home
+              Willkommen
             </a>
           </li>
           <li>
