@@ -473,6 +473,15 @@ h3 {
     flex-direction: column;
     padding: 10px;
   }
+  .Photovoltaik-container{
+    margin: 20px;
+  }
+  #root > div > div.solar-container > div.Speichersysteme-section > div:nth-child(2) > p ,
+  #root > div > div.solar-container > div.Speichersysteme-section > div:nth-child(2) > h2
+  {
+    margin: 20px;
+  }
+  
   h2{
     font-size: 24px;
   }
