@@ -66,9 +66,9 @@ function Navbar() {
           </li>
           <li>
             <a
-              href="#contact"
-              className={activeLink === "#contact" ? "active" : ""}
-              onClick={() => handleLinkClick("#contact")}
+              href="/contact"
+              className={activeLink === "/contact" ? "active" : ""}
+              onClick={() => handleLinkClick("/contact")}
             >
               Contact
             </a>

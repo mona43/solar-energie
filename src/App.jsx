@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import { About, Energie, Home, ScrollToTop, Solar} from "./pages";
+import { About, Contact, Energie, Home, ScrollToTop, Solar} from "./pages";
 import Footer from "./components/Footer";
 
 function App() {
@@ -13,6 +13,8 @@ function App() {
           <Route path="/about" element={<About/>} />
           <Route path="/solar" element={<Solar/>} />
           <Route path="/energie" element={<Energie/>} />
+          <Route path="/contact" element={<Contact/>} />
+          
         </Routes>
         <Footer/>
         <ScrollToTop/>

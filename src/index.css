@@ -18,6 +18,7 @@ body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 /* Navbar container */
 .navbar {
@@ -507,6 +508,7 @@ h3 {
     right: 0;
     height: auto;
 }
+
 .title-energie{
   font-size: 24px;
   margin: 20px;
