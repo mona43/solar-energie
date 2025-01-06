@@ -106,6 +106,7 @@ const Energie = () => {
   </div>
         </section>
         <div className="light-bulb"></div>
+        <img src="light.jpg" alt="" className='video-solar' />
         <div className="Photovoltaik-section ">
             <div className="Photovoltaik-container">
                 <h2>Elektrokontrolle</h2>
