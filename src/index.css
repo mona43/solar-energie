@@ -481,7 +481,9 @@ h3 {
   {
     margin: 20px;
   }
-  
+  .elec{
+    flex-direction: column-reverse;
+  }
   h2{
     font-size: 24px;
   }

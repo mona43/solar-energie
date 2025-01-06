@@ -69,7 +69,7 @@ const Energie = () => {
   </div>
         </section>
         
-        <div className="Photovoltaik-section ">
+        <div className="Photovoltaik-section elec ">
             <div className="Elektrokontrolle">
                 <img src="Planung.jpg" alt="" />
             </div>
