@@ -484,6 +484,10 @@ h3 {
   .elec{
     flex-direction: column-reverse;
   }
+  .elec img{
+    width: 100%;
+    text-align: center;
+  }
   h2{
     font-size: 24px;
   }
