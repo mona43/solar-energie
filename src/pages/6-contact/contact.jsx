@@ -50,7 +50,7 @@ const Contact = () => {
       </div>
       <div className="map-section">
         <iframe
-          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Lindenstrasse+21,+2552+Orpund"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2713.894567578385!2d7.316314612542966!3d47.1403315967655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478e1f4c5b8b4529%3A0x9bbcbb8bf9039742!2zTGluZGVuc3RyYXNzZSAyMSwgMjU1MiBPcnB1bmQsINiz2YjZitiz2LHYpw!5e0!3m2!1sar!2seg!4v1737064687861!5m2!1sar!2seg"
           frameBorder="0"
           allowFullScreen
           title="Standortkarte"
