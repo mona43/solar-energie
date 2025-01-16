@@ -47,14 +47,10 @@ const Home = () => {
     {slides.map((slide) => (
       <MDBCarouselItem key={slide.id} itemId={slide.id}>
         {/* صورة الشريحة */}
-        <img 
-          src={slide.src} 
-          className="d-block w-100 img-fluid carousel-image" 
-          alt={slide.label} 
-        />
+        <img src={slide.src} className="w-100 carousel-image" alt={slide.label} />
 
 {/* محتوى النصوص */}
-<div className="carousel-caption d-block">
+<div className="carousel-caption">
   <h5 className="carousel-label">{slide.label}</h5>
   <h2 className="carousel-title">{slide.title}</h2>
   <hr className="carousel-divider" />
