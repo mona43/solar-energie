@@ -40,6 +40,20 @@ const Home = () => {
       description: 'Clever speichern, clever sparen.Überschüssigen Strom speichern statt einspeisen.Werden Sie autark!',
     },
   ];
+  document.addEventListener("scroll", function () {
+    const fadeElements = document.querySelectorAll(".fade-in");
+    const triggerBottom = window.innerHeight * 0.8;
+
+    fadeElements.forEach((element) => {
+      const elementTop = element.getBoundingClientRect().top;
+
+      if (elementTop < triggerBottom) {
+        element.classList.add("show");
+      } else {
+        element.classList.remove("show");
+      }
+    });
+  });
   return (
     <div>
 <div className="crousel">
@@ -65,23 +79,23 @@ const Home = () => {
 
         
         {/* Energy Section */}
-        <div className="Photovoltaik-section" role="link" onClick={() => window.location.href = '/energie'}>
+        <div className="Photovoltaik-section fade-in" role="link" onClick={() => window.location.href = '/energie'}>
             <div className="Photovoltaik-container">
                 <h2>Energie</h2>
                 <p>
                 Bei MFM Energie sind wir auf die Reparatur und Installation elektrischer Anlagen im Innen- und Außenbereich spezialisiert und bieten erstklassige Reparatur-, Austausch- und Serviceleistungen für private und gewerbliche Projekte.
                 </p>
-                <button className="cta-button">Mehr erfahren</button>
+                <button className="cta-button fade-in">Mehr erfahren</button>
             </div>
-            <div className="Photovoltaik-img">
+            <div className="Photovoltaik-img fade-in">
                 <img src="Energie.jpg" alt="" />
             </div>
         </div>
 
 
         {/* Solar Section */}
-        <div className="Photovoltaik-section electro" role="link" onClick={() => window.location.href = '/solar'}>
-          <div className="Photovoltaik-img">
+        <div className="Photovoltaik-section electro fade-in" role="link" onClick={() => window.location.href = '/solar'}>
+          <div className="Photovoltaik-img fade-in">
                 <img src="Solar.jpg" alt="" />
             </div>
             <div className="Photovoltaik-container">
@@ -89,7 +103,7 @@ const Home = () => {
                 <p>
                 Bei MFM SOLAR sind wir auf die Installation von Solarmodulen und anderen Komponenten spezialisiert, die Unternehmen dabei helfen, ihren CO2-Fußabdruck zu reduzieren und Energiekosten zu sparen.
                 </p>
-                <button className="cta-button">Mehr erfahren</button>
+                <button className="cta-button fade-in">Mehr erfahren</button>
             </div>
             
         </div>
