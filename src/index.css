@@ -723,7 +723,7 @@ h3 {
   max-width: 90%;
 }
 .carousel-image{
-  min-height: 100vh;
+  min-height: 80vh;
 }
 .carousel-description{
 height: 60px;
