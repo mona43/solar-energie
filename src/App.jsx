@@ -1,7 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import { About, Contact, Energie, Home, ScrollToTop, Solar} from "./pages";
+import { About, Contact, Energie, Home, ScrollToTop, Services, Solar} from "./pages";
 import Footer from "./components/Footer";
+import './components/i18n'
+
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
           <Route path="/solar" element={<Solar/>} />
           <Route path="/energie" element={<Energie/>} />
           <Route path="/contact" element={<Contact/>} />
+          <Route path="/services" element={<Services/>} />
           
         </Routes>
         <Footer/>

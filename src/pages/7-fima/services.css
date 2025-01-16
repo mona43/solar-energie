@@ -1,0 +1,92 @@
+.company-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .company-header {
+    text-align: center;
+    background: #F4AB07;
+    color: white;
+    padding:10px;
+    border-radius: 8px;
+  }
+  
+  .header-image {
+    width: 80%;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  
+  .company-title {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  .company-description {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  .company-mission,
+  .company-vision,
+  .company-services,
+  .company-achievements,
+  .company-contact {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .service-item {
+    flex: 1 1 calc(50% - 20px);
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-icon {
+    width: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-button {
+    background-color: #0066cc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .contact-button:hover {
+    background-color: #004a99;
+  }
+  
+  .achievements-image,
+  .contact-image,
+  .mission-image,
+  .vision-image {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 8px;
+  }
+  

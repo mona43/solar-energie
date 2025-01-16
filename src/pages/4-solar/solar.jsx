@@ -4,8 +4,8 @@ const Solar = () => {
   return (
     <div className='solar-container'>
         <div className="title-solar">
-            <h1>SOLAR</h1>
-            <p>
+            <h1 className='carousel-title'>SOLAR</h1>
+            <p className='carousel-description'>
             Bei MFM SOLAR sind wir auf die Installation von Solarmodulen und anderen Komponenten spezialisiert.
             </p>
         </div>
@@ -37,14 +37,18 @@ const Solar = () => {
         <p>Photovoltaik ist eine erneuerbare Energiequelle, die keine schädlichen Emissionen verursacht. Sie hilft dabei, den Kohlenstoff-Fußabdruck zu reduzieren und Energieunabhängigkeit zu fördern.</p>
       </div>
         </section>
-        <div className="Speichersysteme-section">
-            <div className="Speichersysteme-img"></div>
-            <div styleName='Speichersysteme-container'>
-            <h2>Speichersysteme</h2>
-            <p>
-            Ein Speichersystem für eine Photovoltaikanlage besteht aus einem Satz Batterien, die die von den Solarpaneelen produzierte und nicht sofort verbrauchte Energie speichern. Dieses System ermöglicht es, überschüssige Energie, die tagsüber erzeugt wird, zu speichern und abends oder nachts zu nutzen.
+        <div className="light-bulb"></div>
+        <div className="Photovoltaik-section elec ">
+            <div className="Photovoltaik-img">
+                <img src="Speichersysteme.jpg" alt="" />
+            </div>
+            <div className="Photovoltaik-container">
+                <h2>Speichersysteme</h2>
+                <p>
+                Ein Speichersystem für eine Photovoltaikanlage besteht aus einem Satz Batterien, die die von den Solarpaneelen produzierte und nicht sofort verbrauchte Energie speichern. Dieses System ermöglicht es, überschüssige Energie, die tagsüber erzeugt wird, zu speichern und abends oder nachts zu nutzen.
             </p>
             </div>
+            
             
         </div>
         <section className="solar-storage-section">

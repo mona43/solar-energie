@@ -1,75 +1,88 @@
+/* تنسيق عام */
+.contact-section {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+  text-align: center;
+}
+
 .container {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #f7f7f7;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    direction: rtl;
-    text-align: right;
-  }
-  
-  .title {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .description {
-    font-size: 1.2rem;
-    color: #666;
-    margin-bottom: 20px;
-  }
-  
-  .success {
-    color: green;
-    font-size: 1rem;
-    margin-bottom: 15px;
-  }
-  
-  .form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .field {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-  }
-  
-  .field label {
-    font-size: 1rem;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  .field input,
-  .field textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-  }
-  
-  .field textarea {
-    resize: none;
-    height: 100px;
-  }
-  
-  .submitButton {
-    padding: 10px 20px;
-    font-size: 1rem;
-    color: #fff;
-    background-color: #007bff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .submitButton:hover {
-    background-color: #0056b3;
-  }
-  
+  width: 80%;
+  margin: auto;
+}
+
+.contact-header {
+  margin-bottom: 30px;
+}
+
+.contact-title {
+  font-size: 2.5rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.contact-subtitle {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* تنسيق النموذج */
+.contact-form-container {
+  width: 50%;
+  display: inline-block;
+  text-align: left;
+}
+
+.contact-form .form-group {
+  margin-bottom: 15px;
+}
+
+.input-field, .textarea-field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.textarea-field {
+  resize: none;
+}
+
+.submit-btn {
+  background-color: #F4AB07;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #d49708;
+}
+
+/* تنسيق الصورة */
+.contact-image-container {
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.contact-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* تنسيق الخريطة */
+.map-section {
+  margin-top: 40px;
+}
+
+.map-frame {
+  width: 100%;
+  height: 500px;
+  border: none;
+  border-radius: 10px;
+}
