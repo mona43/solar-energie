@@ -1,6 +1,20 @@
 import React from 'react'
 
 const Solar = () => {
+  document.addEventListener("scroll", function () {
+    const fadeElements = document.querySelectorAll(".fade-in");
+    const triggerBottom = window.innerHeight * 0.8;
+
+    fadeElements.forEach((element) => {
+      const elementTop = element.getBoundingClientRect().top;
+
+      if (elementTop < triggerBottom) {
+        element.classList.add("show");
+      } else {
+        element.classList.remove("show");
+      }
+    });
+  });
   return (
     <div className='solar-container'>
         <div className="title-solar">
@@ -9,7 +23,7 @@ const Solar = () => {
             Bei MFM SOLAR sind wir auf die Installation von Solarmodulen und anderen Komponenten spezialisiert.
             </p>
         </div>
-        <div className="Photovoltaik-section">
+        <div className="Photovoltaik-section fade-in">
             <div className="Photovoltaik-container">
                 <h2>Photovoltaik</h2>
                 <p>
@@ -20,25 +34,25 @@ const Solar = () => {
                 <img src="Photovoltaik.png" alt="" />
             </div>
         </div>
-        <section className="solar-storage-section">
-      <div className="storage-item">
+        <section className="solar-storage-section fade-in">
+      <div className="storage-item fade-in">
         <img src="solar-panel.svg" alt="" className='icon' />
         <h3>Was ist Photovoltaik?</h3>
         <p>Photovoltaik bezieht sich auf die Umwandlung von Sonnenlicht in elektrische Energie mithilfe von Solarzellen. Diese Technologie wird weltweit genutzt, um saubere und nachhaltige Energie zu erzeugen.</p>
       </div>
-      <div className="storage-item" >
+      <div className="storage-item fade-in" >
         <img src="sun.svg" alt="" className='icon'/>
         <h3>Wie funktioniert Photovoltaik?</h3>
         <p>Wenn Sonnenlicht auf eine Solarzelle trifft, erzeugt das Licht eine elektrische Spannung, die dann in nutzbare elektrische Energie umgewandelt wird. Diese Energie kann sofort genutzt oder gespeichert werden.</p>
       </div>
-      <div className="storage-item">
+      <div className="storage-item fade-in">
         <img src="storage (2).svg" alt="" className='icon'/>
         <h3>Vorteile der Photovoltaik</h3>
         <p>Photovoltaik ist eine erneuerbare Energiequelle, die keine schädlichen Emissionen verursacht. Sie hilft dabei, den Kohlenstoff-Fußabdruck zu reduzieren und Energieunabhängigkeit zu fördern.</p>
       </div>
         </section>
         <div className="light-bulb"></div>
-        <div className="Photovoltaik-section elec ">
+        <div className="Photovoltaik-section elec fade-in ">
             <div className="Photovoltaik-img">
                 <img src="Speichersysteme.jpg" alt="" />
             </div>
@@ -51,18 +65,18 @@ const Solar = () => {
             
             
         </div>
-        <section className="solar-storage-section">
-            <div className="storage-item">
+        <section className="solar-storage-section fade-in">
+            <div className="storage-item fade-in">
                 <img src="box.svg" alt="" className='icon' />
                 <h3>Speicherung im Photovoltaiksystem</h3>
                 <p>Das Speichersystem besteht aus Batterien, die die von den Solarmodulen erzeugte Energie speichern, die nicht sofort verbraucht wird. Diese Speicherung ermöglicht die Nutzung der Energie zu einem späteren Zeitpunkt, beispielsweise am Abend oder in der Nacht.</p>
             </div>
-            <div className="storage-item" >
+            <div className="storage-item fade-in" >
                 <img src="light-bulb.svg" alt="" className='icon'/>
                 <h3>Überschüssige Energie speichern</h3>
                 <p>Wenn die Solarmodule tagsüber überschüssige Energie erzeugen, wird diese in Batterien gespeichert, um sie zu nutzen, wenn die Sonneneinstrahlung nachlässt oder keine sofortige Energieproduktion stattfindet.</p>
             </div>
-            <div className="storage-item">
+            <div className="storage-item fade-in">
                 <img src="moon.svg" alt="" className='icon'/>
                 <h3>Nutzung der Energie in der Nacht</h3>
                 <p>Batterien helfen dabei, während der Nachtstunden Strom zu liefern, um sicherzustellen, dass elektrische Geräte ohne Unterbrechung verwendet werden können, auch wenn keine direkte Sonneneinstrahlung vorhanden ist.</p>

@@ -603,11 +603,10 @@ h3 {
     display: block;
   }
   .title-solar{
-    text-align: left;
     width: 80%;
     margin: auto;
-    height: 50vh;
-    font-size: 18px;
+    height: 80vh;
+    padding-block: 165px;
   }
   footer {
     font-size: 0.9rem; 
