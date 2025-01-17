@@ -22,9 +22,10 @@ function Navbar() {
   };
 
   return (
-    <nav className="navbar">
-      <div className="container">
-        <img src="logonav.png" alt="Logo" className="logo" />
+    <nav className="navbar1">
+    <img src="logonav.png" alt="Logo" className="logo" />
+      <div>
+          
         <button className="menu-toggle" onClick={toggleMenu}>
           {isOpen ? "✖" : "☰"}
         </button>
