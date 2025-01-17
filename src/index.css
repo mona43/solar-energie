@@ -135,7 +135,8 @@ footer {
 }
 .carousel-image {
   object-fit: cover;
-  max-height: 660px; 
+  min-height: 90vh; 
+  max-height: 90vh;
 }
 
 
@@ -416,15 +417,6 @@ h3 {
   opacity: 1;
   transform: translateY(0);
 }
-
-/* Responsive styles */
-@media (max-width:992px) {
-.carousel-image{
-  min-height: 700px;
-}
-}
-
-
 @media (max-width: 768px) {
   .solar-storage-section{
     flex-direction: column;
@@ -545,9 +537,6 @@ h3 {
 }
 .Photovoltaik-img img {
   max-width: 90%;
-}
-.carousel-image{
-  min-height: 80vh;
 }
 .carousel-description{
 height: 60px;

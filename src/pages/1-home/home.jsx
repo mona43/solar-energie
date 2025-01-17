@@ -6,40 +6,48 @@ const Home = () => {
   const slides = [
     {
       id: 1,
-      src: 'bg1.jpg',
+      src: 'solar-energy-collectors-photovoltaic-system-pv-1.jpg',
       label: 'DIE SPEZIALISTEN',
-      title:'DEVISOL AG',
-      description: 'Wir sind Ihr zuverlässiger Partner für Solaranlagen, Stromspeicher, Elektromobilität,Elektroinstallationen und Elektroanlagen.',
+      title: 'Photovoltaik',
+      description: 'Wir sind Ihr zuverlässiger Partner für Photovoltaiklösungen und erneuerbare Energien.',
     },
     {
       id: 2,
-      src: 'bg4.jpg',
-      label: 'DEVISOL AG - DIE SPEZIALISTEN',
-      title:'Solaranlagen',
-      description: 'Sorgenlos Strom produzieren.Für Sie holen wir die Sonne vom Himmel.',
+      src: 'bg5.jpg',
+      label: 'DIE SPEZIALISTEN',
+      title: 'Speichersysteme',
+      description: 'Optimieren Sie Ihren Energieverbrauch mit unseren intelligenten Stromspeichersystemen.',
     },
     {
       id: 3,
-      src: 'Planung.jpg',
-      label: 'DEVISOL AG – DIE SPEZIALISTEN',
-      title:'Elektroinstallationen',
-      description: 'Profitieren Sie von unserem spezifischen und breiten Know-how.',
+      src: '4088241_air-to-air-heat-pump-for-cooling-or-heating-the-home-outdoor-un_noscale_1A_8zW_Bf2A2v.jpg',
+      label: 'DIE SPEZIALISTEN',
+      title: 'Wärmepumpe',
+      description: 'Effiziente Heizlösungen mit modernsten Wärmepumpensystemen für Ihr Zuhause.',
     },
     {
       id: 4,
-      src: 'bg2.jpg',
-      label: 'DEVISOL AG – DIE SPEZIALISTEN',
-      title:'Elektromobilität',
-      description: 'Nutzen Sie die eigene Solarenergie für Ihr Elektroauto.',
+      src: 'bg3.jpg',
+      label: 'DIE SPEZIALISTEN',
+      title: 'Planung',
+      description: 'Professionelle Planung für Ihre individuellen Energieprojekte – von Anfang an perfekt umgesetzt.',
     },
     {
       id: 5,
-      src: 'bg5.jpg',
-      label: 'DEVISOL AG - DIE SPEZIALISTEN',
-      title:'ENERGY STORAGE',
-      description: 'Clever speichern, clever sparen.Überschüssigen Strom speichern statt einspeisen.Werden Sie autark!',
+      src: 'beutler-elektro-einblick-elektrokontrollen.jpg',
+      label: 'DIE SPEZIALISTEN',
+      title: 'Elektrokontrolle',
+      description: 'Sichern Sie Ihre Elektroanlagen mit unserer umfassenden Elektrokontrolle.',
+    },
+    {
+      id: 6,
+      src: 'hon-ab-energy-storage-solar-power.jpg',
+      label: 'DIE SPEZIALISTEN',
+      title: 'Elektroinstallationen',
+      description: 'Profitieren Sie von unserer Expertise in Elektroinstallationen für jede Art von Projekt.',
     },
   ];
+  
   document.addEventListener("scroll", function () {
     const fadeElements = document.querySelectorAll(".fade-in");
     const triggerBottom = window.innerHeight * 0.8;
