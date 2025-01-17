@@ -1,6 +1,20 @@
 import React from 'react'
 
 const Energie = () => {
+  document.addEventListener("scroll", function () {
+    const fadeElements = document.querySelectorAll(".fade-in");
+    const triggerBottom = window.innerHeight * 0.8;
+
+    fadeElements.forEach((element) => {
+      const elementTop = element.getBoundingClientRect().top;
+
+      if (elementTop < triggerBottom) {
+        element.classList.add("show");
+      } else {
+        element.classList.remove("show");
+      }
+    });
+  });
   return (
     <div>
         <div className='energie-container'>
@@ -37,34 +51,34 @@ const Energie = () => {
                 </svg>
             </div>
         </div>
-        <div className="Photovoltaik-section">
-  <div className="Photovoltaik-container">
+        <div className="Photovoltaik-section ">
+  <div className="Photovoltaik-container fade-in">
     <h2>Wärmepumpe</h2>
     <p>
       Wärmepumpen sind umweltfreundliche Heizsysteme, die Wärme aus der Umgebungsluft, dem Erdreich oder dem Wasser nutzen, um Ihr Zuhause effizient zu heizen. Sie sind eine nachhaltige Lösung für die Energiewende und reduzieren die Heizkosten.
     </p>
   </div>
-  <div className="Photovoltaik-img">
+  <div className="Photovoltaik-img fade-in">
     <img src="Wärmepumpe.jpg" alt="Wärmepumpe" />
   </div>
 </div>
 
-<section className="solar-storage-section">
-  <div className="storage-item">
+<section className="solar-storage-section fade-in">
+  <div className="storage-item fade-in">
     <img src="light-bulb-14-svgrepo-com.svg" alt="Energie sparen" className="icon" />
     <h3>Was ist eine Wärmepumpe?</h3>
     <p>
       Eine Wärmepumpe ist ein Gerät, das Wärme aus der Umgebung aufnimmt und sie auf ein höheres Temperaturniveau anhebt, um Räume zu beheizen oder Warmwasser bereitzustellen. Sie ist eine effiziente und umweltfreundliche Heizlösung.
     </p>
   </div>
-  <div className="storage-item">
+  <div className="storage-item fade-in">
     <img src="working-work-svgrepo-com.svg" alt="Funktionsweise" className="icon" />
     <h3>Wie funktioniert eine Wärmepumpe?</h3>
     <p>
       Wärmepumpen arbeiten nach dem Prinzip der Thermodynamik. Sie entziehen der Umwelt (Luft, Wasser oder Erde) Wärme und transportieren diese in Ihr Zuhause, wo sie für Heizung oder Warmwasserbereitung verwendet wird.
     </p>
   </div>
-  <div className="storage-item">
+  <div className="storage-item fade-in">
     <img src="savings-svgrepo-com.svg" alt="Kosteneinsparungen" className="icon" />
     <h3>Vorteile der Wärmepumpe</h3>
     <p>
@@ -74,11 +88,11 @@ const Energie = () => {
 </section>
 
         
-        <div className="Photovoltaik-section elec ">
-            <div className="Photovoltaik-img">
+        <div className="Photovoltaik-section elec fade-in">
+            <div className="Photovoltaik-img fade-in">
                 <img src="Planung.jpg" alt="" />
             </div>
-            <div className="Photovoltaik-container">
+            <div className="Photovoltaik-container fade-in">
                 <h2>Planung</h2>
                 <p>
                 Zögern Sie nicht, uns zu kontaktieren. Wir werden Sie rasch mit Informationen betreffend Ihrer Wünsche und Bedürfnisse bedienen.
@@ -87,22 +101,22 @@ const Energie = () => {
             
             
         </div>
-        <section className="solar-storage-section">
-  <div className="storage-item">
+        <section className="solar-storage-section fade-in">
+  <div className="storage-item fade-in">
     <img src="blueprint.svg" alt="" className="icon" />
     <h3>Was bedeutet Planung?</h3>
     <p>
       Planung ist der Schlüssel für erfolgreiche Projekte. Sie umfasst die sorgfältige Analyse, Strukturierung und Vorbereitung aller notwendigen Schritte, um effiziente und fehlerfreie Ergebnisse zu gewährleisten.
     </p>
   </div>
-  <div className="storage-item">
+  <div className="storage-item fade-in">
     <img src="teamwork.svg" alt="" className="icon" />
     <h3>Wie läuft die Planung ab?</h3>
     <p>
       Der Planungsprozess beginnt mit einer klaren Zielsetzung und einer detaillierten Analyse. Anschließend werden Strategien entwickelt, Zeitpläne erstellt und alle Ressourcen effizient koordiniert.
     </p>
   </div>
-  <div className="storage-item">
+  <div className="storage-item fade-in">
     <img src="success.svg" alt="" className="icon" />
     <h3>Vorteile einer professionellen Planung</h3>
     <p>
@@ -112,34 +126,34 @@ const Energie = () => {
         </section>
         <div className="light-bulb"></div>
         <img src="light.jpg" alt="" className='video-solar' />
-        <div className="Photovoltaik-section ">
-            <div className="Photovoltaik-container">
+        <div className="Photovoltaik-section fade-in">
+            <div className="Photovoltaik-container fade-in">
                 <h2>Elektrokontrolle</h2>
                 <p>
                 Wir stellen die Kundenzufriedenheit an die erste Stelle. Wir streben eine dauerhafte, transparente und auf Vertrauen basierende Kundenzufriedenheit an. 
                 </p>
             </div>
-            <div className="Photovoltaik-img">
+            <div className="Photovoltaik-img fade-in">
                 <img src="Elektroinstallationen-2.jpg" alt="" />
             </div>
             
         </div>
-        <section className="solar-storage-section">
-  <div className="storage-item">
+        <section className="solar-storage-section fade-in">
+  <div className="storage-item fade-in">
     <img src="check.svg" alt="" className="icon" />
     <h3>Was ist Elektrokontrolle?</h3>
     <p>
       Elektrokontrolle umfasst die Überprüfung elektrischer Anlagen und Geräte, um deren Sicherheit und Funktionstüchtigkeit zu gewährleisten. Sie ist ein essenzieller Bestandteil moderner Elektrotechnik.
     </p>
   </div>
-  <div className="storage-item">
+  <div className="storage-item fade-in">
     <img src="inspection.svg" alt="" className="icon" />
     <h3>Wie wird Elektrokontrolle durchgeführt?</h3>
     <p>
       Während der Elektrokontrolle werden elektrische Systeme auf Mängel, Überlastungen und mögliche Gefahrenquellen untersucht. Messgeräte und Prüfmethoden garantieren eine präzise Analyse.
     </p>
   </div>
-  <div className="storage-item">
+  <div className="storage-item fade-in">
     <img src="benefits.svg" alt="" className="icon" />
     <h3>Vorteile der Elektrokontrolle</h3>
     <p>
@@ -147,34 +161,34 @@ const Energie = () => {
     </p>
   </div>
         </section>
-        <div className="Photovoltaik-section">
-            <div className="Photovoltaik-container">
+        <div className="Photovoltaik-section fade-in">
+            <div className="Photovoltaik-container fade-in">
                 <h2>Elektroinstallationen</h2>
                 <p>
                 Wir erbringen dem neusten Stand der Technik entsprechende Leistungen in einwandfreier Qualität, termingerecht und zu fairen, marktgerechten Preisen.
                 </p>
             </div>
-            <div className="Photovoltaik-img">
+            <div className="Photovoltaik-img fade-in">
                 <img src="Elektroinstallationen.jpg" alt="" />
             </div>
             
         </div>
-        <section className="solar-storage-section">
-  <div className="storage-item">
+        <section className="solar-storage-section fade-in">
+  <div className="storage-item fade-in">
     <img src="electric-refueli.svg" alt="" className="icon" />
     <h3>Was sind Elektroinstallationen?</h3>
     <p>
       Elektroinstallationen beziehen sich auf die Planung, Installation und Wartung elektrischer Systeme, die in Gebäuden und Außenbereichen verwendet werden. Sie sind essenziell für eine sichere Stromversorgung.
     </p>
   </div>
-  <div className="storage-item">
+  <div className="storage-item fade-in">
     <img src="electric-tower.svg" alt="" className="icon" />
     <h3>Wie funktionieren Elektroinstallationen?</h3>
     <p>
       Elektroinstallationen umfassen das Verlegen von Kabeln, die Einrichtung von Schaltkreisen und den Anschluss von Geräten. Unsere Fachkräfte sorgen für präzise und sichere Arbeiten.
     </p>
   </div>
-  <div className="storage-item">
+  <div className="storage-item fade-in">
     <img src="plug-circle.svg" alt="" className="icon" />
     <h3>Vorteile professioneller Elektroinstallationen</h3>
     <p>

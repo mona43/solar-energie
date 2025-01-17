@@ -54,7 +54,7 @@ const Solar = () => {
         <div className="light-bulb"></div>
         <div className="Photovoltaik-section elec fade-in ">
             <div className="Photovoltaik-img">
-                <img src="Speichersysteme.jpg" alt="" />
+                <img src="hon-ab-energy-storage-solar-power.jpg" alt="" />
             </div>
             <div className="Photovoltaik-container">
                 <h2>Speichersysteme</h2>
