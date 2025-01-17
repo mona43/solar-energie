@@ -35,7 +35,7 @@ const Services = () => {
             <p>
               Wir engagieren uns dafür, die besten Technologien zu nutzen, um innovative Lösungen zu entwickeln, die sowohl effizient als auch umweltfreundlich sind.
             </p>
-            <img src='mission.jpg' alt='Unsere Mission' className='mission-image' height={500} />
+            <img src='mission.jpg' alt='Unsere Mission' className='mission-image'  />
           </section>
           
           <section className='company-vision fade-in'>
@@ -47,7 +47,7 @@ const Services = () => {
             <p>
               Wir glauben daran, dass technologische Fortschritte der Schlüssel zu einer nachhaltigen Welt sind. Deshalb streben wir danach, Vorreiter in der Branche zu bleiben.
             </p>
-            <img src='vision.jpg' alt='Unsere Vision' className='vision-image' height={500}/>
+            <img src='vision.jpg' alt='Unsere Vision' className='vision-image' />
           </section>
           
           <section className='company-services fade-in'>
@@ -94,7 +94,7 @@ const Services = () => {
               <li>2023: Zertifizierung als klimaneutrales Unternehmen</li>
               <li>Mehr als 10.000 installierte Solarmodule weltweit</li>
             </ul>
-            <img src='R.jpg' alt='Unsere Erfolge' className='achievements-image' height={500}/>
+            <img src='R.jpg' alt='Unsere Erfolge' className='achievements-image' />
           </section>
           
           <section className='company-contact fade-in'>
