@@ -4,6 +4,16 @@
     color: #333;
   }
   
+  .mfm{
+    position: relative;
+    height:100px ;
+    width: 200px;
+    font-family: "EB_Garamond variant1";
+    font-size: 70px;
+    color: #aee768;
+    /* font-style: italic; */
+
+  }
   .company-header {
     background: linear-gradient(rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.288)), url("/bgc.jpg");
     background-size: cover;

@@ -8,7 +8,7 @@ function Footer() {
         <div className="footer-contact">
           <div className="contact-item">
             <img src="location.svg" alt="Location Icon" className="footer-icon" />
-            <p>Lindenstrasse 21, 2552 Orpund</p>
+            <a href="#">Lindenstrasse 21, 2552 Orpund</a>
           </div>
           <div className="contact-item">
             <img src="phone.svg" alt="Phone Icon" className="footer-icon" />

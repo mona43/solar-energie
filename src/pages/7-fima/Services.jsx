@@ -18,9 +18,10 @@ const Services = () => {
     return (
         <div className='company-container'>
           <div className='company-header'>
-            <h1 className='company-title'>Über MFM</h1>
-            <p className='company-description' style={{color:'#F3AB06', fontSize:'20px', fontWeight:'bold'}}>
-              MFM ist ein führendes Unternehmen in den Bereichen erneuerbare Energien, Elektrotechnik und moderne Installationen. 
+            {/* <h1 className='company-title'>Über MFM</h1> */}
+            <p className='company-description' style={{color:'#F3AB06', fontSize:'40px', fontWeight:'bold'}}>
+              {/* <img src="mfm.jpg" alt="" className='mfm' /> */}
+              <span className='mfm'>MFM</span> ist ein führendes Unternehmen in den Bereichen erneuerbare Energien, Elektrotechnik und moderne Installationen. 
               Wir stehen für Innovation, Qualität und eine nachhaltige Zukunft.
             </p>
             <img src='construction-management-building-materials.png' alt='Company Overview' className='header-image' />
@@ -81,7 +82,7 @@ const Services = () => {
             </div>
           </section>
           
-          <section className='company-achievements fade-in'>
+          {/* <section className='company-achievements fade-in'>
             <h2>Unsere Erfolge</h2>
             <p>
               Seit unserer Gründung haben wir über 5.000 Projekte erfolgreich abgeschlossen und dabei unseren Kunden geholfen, ihre Energiekosten drastisch zu senken.
@@ -95,7 +96,7 @@ const Services = () => {
               <li>Mehr als 10.000 installierte Solarmodule weltweit</li>
             </ul>
             <img src='R.jpg' alt='Unsere Erfolge' className='achievements-image' />
-          </section>
+          </section> */}
           
           <section className='company-contact fade-in'>
             <h2>Kontaktieren Sie uns</h2>
@@ -104,11 +105,11 @@ const Services = () => {
               Wir stehen Ihnen von Montag bis Freitag von 9:00 bis 18:00 Uhr zur Verfügung.
             </p>
             <p>
-  Sie können uns telefonisch unter 
-  <a href="tel:+41032508323" ><strong>+41 032 508 323</strong></a> 
-  erreichen oder uns eine E-Mail an 
-  <a href="mailto:info@mfmelektro.ch" ><strong>info@mfmelektro.ch</strong></a> 
-  senden.
+  Sie können uns telefonisch unter  
+  <a href="tel:+41032508323" ><strong> +41 032 508 323 </strong></a> 
+  erreichen oder uns eine E-Mail an  
+  <a href="mailto:info@mfmelektro.ch" ><strong> info@mfmelektro.ch </strong></a> 
+   senden.
 </p>
 
             <button className='contact-button'>Jetzt Kontakt aufnehmen</button>

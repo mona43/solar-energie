@@ -149,8 +149,10 @@ body{
 
 .carousel-description {
   font-size: 1.4rem;
-  line-height: 1.6;
-  color: #ffffff;
+  line-height: 1.9;
+  color: #f39c12;  
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); 
+  font-weight: 800;
   max-width: 70%;
 }
 
