@@ -23,50 +23,86 @@ body{
 
 
 /* footer */
-
-footer {
-  background-color: var(--primary-color); 
-  color: #fff; 
-  padding: 20px 0; 
-  text-align: center;
-  font-size: 1rem;
-  
-}
 .footer-container {
-  max-width: 1200px; 
-  margin: 0 auto; 
-  padding: 0 15px; 
+  background-color: var(--primary-color); 
+  color: var(--primary-color);
+  padding: 40px 20px;
+  text-align: center;
 }
 
-.footer-container ul {
-  list-style: none; 
-  padding: 0;
-  margin: 15px 0; 
+
+.footer-contact,
+.footer-links,
+.footer-social {
+  margin-bottom: 30px;
+}
+
+.footer-contact {
   display: flex;
-  justify-content: center; 
-  gap: 20px; 
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
-.footer-container ul li a {
-  color: var(--light-color); 
-  text-decoration: none; 
-  padding: 5px 10px; 
-  border-radius: 5px; 
-  transition: color 0.3s ease, background-color 0.3s ease; 
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.footer-container ul li a:hover {
-  color: var(--secondary-color);  
+.footer-icon {
+  width: 24px;
+  height: 24px;
 }
 
-.footer-container p {
-  margin-top: 15px; 
-  font-size: 0.9rem; 
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.footer-links a {
+  color: #F1BA01; 
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ffffff; 
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+  filter: brightness(0) invert(1); 
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Copyright Section */
+.footer-copyright {
+  margin-top: 20px;
+  font-size: 14px;
   color: var(--light-color);
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+  left: 0;
+  background-color: var(--primary-color);
 }
-
-
 
 /* home page */
 .carousel-caption {
@@ -163,18 +199,6 @@ footer {
   text-align: left;
   margin-block: 350px;
 }
-.home-title {
-  text-align: center;
-  color: var(--primary-color);
-  font-size: 36px;
-}
-.d-none {
-  display: block !important;
-}
-
-/* Section Styles */
-
-
 /* solar page */
 
 .video-solar {
@@ -280,16 +304,6 @@ footer {
   box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.2);
 }
 
-#root > div > div.solar-container > div.Speichersysteme-section > div:nth-child(2){
-  padding: 30px;
-  background-color: var(--light-color);
-  position: absolute;
-  width: 50%;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  height: auto;
-}
 .solar-storage-section {
   display: flex;
   flex-direction: row;
@@ -422,7 +436,7 @@ h3 {
   .solar-storage-section{
     flex-direction: column;
     width: auto;
-    padding: 48px;
+    padding: 12px;
   }
   h3{
     font-size: 1rem;
@@ -476,7 +490,6 @@ h3 {
   }
   .Photovoltaik-section{
     flex-direction: column;
-    padding: 10px;
   }
   .Photovoltaik-container{
     margin: 20px;
@@ -516,11 +529,11 @@ h3 {
   width: 100%;
   text-align: center;
 }
+
 .light-bulb{
   height: 40vh;
 }
 .Photovoltaik-section {
-  flex-direction: column;
   text-align: center;
   padding: 40px 20px;
 }
@@ -537,7 +550,8 @@ h3 {
   font-size: 24px;
 }
 .Photovoltaik-img img {
-  max-width: 90%;
+  max-width: 100%;
+  min-height: auto;
 }
 .carousel-description{
 height: 60px;
