@@ -63,7 +63,9 @@ body{
   justify-content: center;
   gap: 30px;
 }
-
+.contact-item a{
+  color: #333;
+}
 .footer-links a {
   color: #F1BA01; 
   text-decoration: none;
@@ -112,7 +114,6 @@ body{
   top: -150px;
   margin: auto;
 }
-
 
 .carousel-label {
   font-size: 2rem;
