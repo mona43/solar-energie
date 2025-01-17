@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import i18n from "i18next"; 
+import i18n from "i18next";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [activeLink, setActiveLink] = useState();
-  const [currentLanguage, setCurrentLanguage] = useState("de"); 
+  const [currentLanguage, setCurrentLanguage] = useState("de");
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -17,8 +17,8 @@ function Navbar() {
 
   const changeLanguage = (lang) => {
     setCurrentLanguage(lang);
-    i18n.changeLanguage(lang); 
-    localStorage.setItem("language", lang); 
+    i18n.changeLanguage(lang);
+    localStorage.setItem("language", lang);
   };
 
   return (
@@ -26,8 +26,7 @@ function Navbar() {
       <div className="container">
         <img src="logonav.png" alt="Logo" className="logo" />
         <button className="menu-toggle" onClick={toggleMenu}>
-          {/* تغيير أيقونة الزر بين ☰ و X */}
-          {isOpen ? "X" : "☰"}
+          {isOpen ? "✖" : "☰"}
         </button>
         <ul className={`nav-links ${isOpen ? "active" : ""}`}>
           <li>
@@ -71,7 +70,6 @@ function Navbar() {
             </a>
           </li>
 
-          {/* خانة الترجمة مع Dropdown */}
           <li className="language-switcher">
             <select
               value={currentLanguage}
