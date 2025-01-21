@@ -11,8 +11,6 @@
     font-family: "EB_Garamond variant1";
     font-size: 70px;
     color: #aee768;
-    /* font-style: italic; */
-
   }
   .company-header {
     background: linear-gradient(rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.288)), url("/bgc.jpg");
@@ -38,8 +36,10 @@
   }
   
   .company-description {
-    font-size: 18px;
+    font-size: 40px;
     margin-top: 10px;
+    color: #F3AB06;
+
   }
   
   .company-mission,
@@ -59,14 +59,14 @@
 .contact-image {
   width: 100%;
   max-width: 800px; 
-  height: auto; /* Maintain aspect ratio */
+  height: auto; 
   margin-top: 20px;
   margin-inline: 250px ;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Additional adjustments for smaller screens */
+
 @media (max-width: 768px) {
   .mission-image,
   .vision-image,

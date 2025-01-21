@@ -20,17 +20,12 @@ body{
   box-sizing: border-box;
   overflow-x: hidden;
 }
-
-
-/* footer */
 .footer-container {
   background-color: var(--primary-color); 
   color: var(--primary-color);
   padding: 40px 20px;
   text-align: center;
 }
-
-
 .footer-contact,
 .footer-links,
 .footer-social {
@@ -93,8 +88,6 @@ body{
 .social-icon:hover {
   transform: scale(1.1);
 }
-
-/* Copyright Section */
 .footer-copyright {
   margin-top: 20px;
   font-size: 14px;
@@ -105,8 +98,6 @@ body{
   left: 0;
   background-color: var(--primary-color);
 }
-
-/* home page */
 .carousel-caption {
   border-radius: 15px;
   width: 80%;  
@@ -125,8 +116,6 @@ body{
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); 
   transition: color 0.3s ease;
 }
-
-
 .carousel-title {
   font-size: 3.5rem;
   font-weight: 700;
@@ -137,16 +126,12 @@ body{
   text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6); 
   transition: color 0.3s ease;
 }
-
-
 .carousel-divider {
   width: 200px;
   border: 1px solid #f39c12;
   margin: 10px;
   opacity: 0.7;
 }
-
-
 .carousel-description {
   font-size: 1.4rem;
   line-height: 1.9;
@@ -155,15 +140,11 @@ body{
   font-weight: 800;
   max-width: 70%;
 }
-
-
 .carousel-label:hover, .carousel-title:hover {
   color: #f39c12; 
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9);  
   cursor: pointer;  
 }
-
-
 .carousel-control-prev-icon::after,
 .carousel-control-next-icon::after {
   font-size: 4rem !important; 
@@ -177,9 +158,6 @@ body{
   min-height: 90vh; 
   max-height: 90vh;
 }
-
-
-
 .carousel-indicators li {
   width: 15px !important;
   height: 15px !important;
@@ -187,8 +165,6 @@ body{
   margin: 0 15px !important;
   transition: transform 0.2s ease-in-out;
 }
-
-
 .carousel-indicators .active {
   background-color: #F0BF00 !important;
   scale: 1.2;
@@ -202,8 +178,6 @@ body{
   text-align: left;
   margin-block: 350px;
 }
-/* solar page */
-
 .video-solar {
   position: fixed;
   top: 0;
@@ -250,8 +224,8 @@ body{
 
 
 .Photovoltaik-container {
-  flex: 1;
-  max-width: 600px;
+  flex: 2;
+  max-width: 650px;
 }
 
 .Photovoltaik-container h2 {
@@ -294,9 +268,7 @@ body{
 }
 
 .Photovoltaik-img img {
-  width: 80%;
-  min-height: 400px; 
-  max-height: 400px; 
+  width: 60%;
   border-radius: 12px;
   box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
   transition: all 0.5s ease;
@@ -314,7 +286,32 @@ body{
   padding: 80px;
   background-color: var(--light-color);
 }
+.solar-Speichersysteme-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+  gap: 20px;
+  padding: 20px;
+  background-color: var(--light-color);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
 
+.solar-Speichersysteme-images img {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.solar-Speichersysteme-images img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.solar-Speichersysteme-images img:active {
+  transform: scale(0.95);
+  transition: transform 0.1s ease;
+}
 .storage-item {
   display: flex;
   flex-direction: column;
@@ -347,7 +344,6 @@ h3 {
   width: 40px;
   height: 40px;
 }
-/* Energie page */
 .energie-container {
   position: relative;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/energie\ bg.jpg') center/cover no-repeat;
@@ -372,8 +368,6 @@ h3 {
   height: 65vh;
   width: 100%;
 }
-
-/* Animation */
 .parallax > use {
   animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
 }
@@ -406,9 +400,6 @@ h3 {
     transform: translate3d(85px, 0, 0);
   }
 }
-
-
-
 .title-energie {
   text-align: left;
   width: 60%;
@@ -582,13 +573,17 @@ max-width: 300px;
 .carousel-control-next-icon::after{
   font-size: 2rem !important;
 }
+.carousel-indicators li{
+  width: 10px !important;
+  height: 10px !important;
+
+}
 }
 @media (max-width: 480px) {
   .footer {
     font-size: 0.8rem; 
   }
 }
-/* Navbar Styling */
 .navbar1 {
   background-color: #ffffff; 
   color: #698C46;
@@ -597,7 +592,8 @@ max-width: 300px;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  position: relative;
+  position: sticky;
+  top: 0;
   z-index: 1000;
 }
 
@@ -658,16 +654,14 @@ max-width: 300px;
   border-color: #F1B703;
   box-shadow: 0 0 5px rgba(241, 183, 3, 0.5); 
 }
-
-/* Mobile Menu */
 @media screen and (max-width: 768px) {
   .menu-toggle {
     display: block;
   }
 
   .logo{
-    width: 120px;
-    margin-inline: 0;
+    width: 90px;
+    margin-inline: 0 ;
   }
   .nav-links {
     position: absolute;

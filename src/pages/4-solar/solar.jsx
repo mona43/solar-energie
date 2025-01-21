@@ -52,19 +52,20 @@ const Solar = () => {
       </div>
         </section>
         <div className="light-bulb"></div>
-        <div className="Photovoltaik-section elec fade-in ">
-            <div className="Photovoltaik-img">
-                <img src="hon-ab-energy-storage-solar-power.jpg" alt="" />
-            </div>
-            <div className="Photovoltaik-container">
+        <div className="Photovoltaik-section fade-in ">
+            <div className="Photovoltaik-container" style={{maxWidth:"100%"}} >
                 <h2>Speichersysteme</h2>
                 <p>
                 Ein Speichersystem für eine Photovoltaikanlage besteht aus einem Satz Batterien, die die von den Solarpaneelen produzierte und nicht sofort verbrauchte Energie speichern. Dieses System ermöglicht es, überschüssige Energie, die tagsüber erzeugt wird, zu speichern und abends oder nachts zu nutzen.
             </p>
             </div>
-            
-            
         </div>
+        <section className="solar-Speichersysteme-images fade-in">
+          <img src="Speichersysteme1.jpg" alt="" />
+          <img src="Speichersysteme2.jpg" alt="" />
+          <img src="Speichersysteme3.jpg" alt="" />
+          <img src="Speichersysteme4.jpg" alt="" />
+        </section>
         <section className="solar-storage-section fade-in">
             <div className="storage-item fade-in">
                 <img src="box.svg" alt="" className='icon' />

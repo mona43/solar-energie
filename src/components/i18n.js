@@ -10,6 +10,7 @@ const resources = {
         energy: "Energie",
         services: "Firma",
         contact: "Kontakt",
+        zevrechner:"Zev",
         de: "Deutsch", // لغة المانية
         fr: "Französisch", // لغة فرنسية
       },
@@ -23,6 +24,7 @@ const resources = {
         energy: "Énergie",
         services: "Entreprise",
         contact: "Contact",
+        zevrechner:"sunboooot",
         de: "Allemand",
         fr: "Français",
       },
@@ -32,8 +34,8 @@ const resources = {
 
 i18n.use(initReactI18next).init({
   resources,
-  lng: "de", // اللغة الافتراضية هي الألمانية
-  fallbackLng: "de", // في حالة عدم وجود ترجمة للغة المختارة، تستخدم الألمانية
+  lng: "de", 
+  fallbackLng: "de", 
   interpolation: {
     escapeValue: false,
   },

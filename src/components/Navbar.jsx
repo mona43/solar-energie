@@ -70,6 +70,14 @@ function Navbar() {
               {i18n.t("navbar.contact")}
             </a>
           </li>
+          <li>
+            <a
+              href="/zevrechner"
+              className={activeLink === "/zevrechner" ? "active" : ""}
+              onClick={() => handleLinkClick("/zevrechner")}>
+              {i18n.t("navbar.zevrechner")}
+            </a>
+          </li>
 
           <li className="language-switcher">
             <select

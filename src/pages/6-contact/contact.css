@@ -1,4 +1,4 @@
-/* Section styling */
+
 .contact-section {
   padding: 50px 20px;
   background: #fff;
@@ -20,7 +20,7 @@
   color: #698C46;
 }
 
-/* Form and content container */
+
 .contact-content {
   display: flex;
   flex-wrap: wrap;
@@ -76,7 +76,7 @@
   background: linear-gradient(to left, #F1B703, #698C46);
 }
 
-/* Image container */
+
 .contact-image-container {
   flex: 1 1 45%;
   text-align: center;
@@ -90,7 +90,7 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Map styling */
+
 .map-section {
   margin-top: 30px;
   text-align: center;
@@ -104,7 +104,7 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
   .contact-content {
     flex-direction: column;

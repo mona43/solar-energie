@@ -11,10 +11,10 @@ const Contact = () => {
     emailjs.sendForm('service_grkb8ct', 'template_cgqb4o5', form.current, '91j3zMi9qTcErZ-x1')
       .then((result) => {
           console.log('Message sent:', result.text);
-          alert('تم إرسال رسالتك بنجاح!');
+          alert('Ihre Nachricht wurde erfolgreich gesendet! 🎉');
       }, (error) => {
           console.log('Error:', error.text);
-          alert('حدث خطأ أثناء الإرسال، حاول مرة أخرى.');
+          alert('Ein Fehler ist beim Senden aufgetreten, bitte versuchen Sie es erneut.');
       });
   };
 

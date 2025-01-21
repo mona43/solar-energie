@@ -68,10 +68,7 @@ const Home = () => {
   <MDBCarousel showIndicators showControls fade>
     {slides.map((slide) => (
       <MDBCarouselItem key={slide.id} itemId={slide.id}>
-        {/* صورة الشريحة */}
         <img src={slide.src} className="w-100 carousel-image" alt={slide.label} />
-
-{/* محتوى النصوص */}
 <div className="carousel-caption">
   <h5 className="carousel-label">{slide.label}</h5>
   <h2 className="carousel-title">{slide.title}</h2>
@@ -86,9 +83,8 @@ const Home = () => {
 
 
         
-        {/* Energy Section */}
         <div className="Photovoltaik-section fade-in" role="link" onClick={() => window.location.href = '/energie'}>
-            <div className="Photovoltaik-container">
+            <div className="Photovoltaik-container" style={{flex:'1'}}>
                 <h2>Energie</h2>
                 <p>
                 Bei MFM Energie sind wir auf die Reparatur und Installation elektrischer Anlagen im Innen- und Außenbereich spezialisiert und bieten erstklassige Reparatur-, Austausch- und Serviceleistungen für private und gewerbliche Projekte.
@@ -96,17 +92,16 @@ const Home = () => {
                 <button className="cta-button fade-in">Mehr erfahren</button>
             </div>
             <div className="Photovoltaik-img fade-in">
-                <img src="Energie.jpg" alt="" />
+                <img src="Energie.jpg" alt="" style={{width:"100%"}} />
             </div>
         </div>
 
 
-        {/* Solar Section */}
         <div className="Photovoltaik-section electro fade-in" role="link" onClick={() => window.location.href = '/solar'}>
           <div className="Photovoltaik-img fade-in">
-                <img src="Solar.jpg" alt="" />
+                <img src="Solar.jpg" alt="" style={{width:"100%" , height:"500px"}} />
             </div>
-            <div className="Photovoltaik-container">
+            <div className="Photovoltaik-container" style={{flex:'1'}}>
                 <h2>Solar</h2>
                 <p>
                 Bei MFM SOLAR sind wir auf die Installation von Solarmodulen und anderen Komponenten spezialisiert, die Unternehmen dabei helfen, ihren CO2-Fußabdruck zu reduzieren und Energiekosten zu sparen.

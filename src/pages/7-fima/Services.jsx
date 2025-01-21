@@ -18,9 +18,7 @@ const Services = () => {
     return (
         <div className='company-container'>
           <div className='company-header'>
-            {/* <h1 className='company-title'>Über MFM</h1> */}
-            <p className='company-description' style={{color:'#F3AB06', fontSize:'40px', fontWeight:'bold'}}>
-              {/* <img src="mfm.jpg" alt="" className='mfm' /> */}
+            <p className='company-description'>
               <span className='mfm'>MFM</span> ist ein führendes Unternehmen in den Bereichen erneuerbare Energien, Elektrotechnik und moderne Installationen. 
               Wir stehen für Innovation, Qualität und eine nachhaltige Zukunft.
             </p>
@@ -82,21 +80,6 @@ const Services = () => {
             </div>
           </section>
           
-          {/* <section className='company-achievements fade-in'>
-            <h2>Unsere Erfolge</h2>
-            <p>
-              Seit unserer Gründung haben wir über 5.000 Projekte erfolgreich abgeschlossen und dabei unseren Kunden geholfen, ihre Energiekosten drastisch zu senken.
-            </p>
-            <p>
-              Wir wurden mehrfach für unsere innovativen Lösungen ausgezeichnet und zählen zu den Top-Unternehmen in der Branche.
-            </p>
-            <ul>
-              <li>2022: Gewinner des Innovationspreises für erneuerbare Energien</li>
-              <li>2023: Zertifizierung als klimaneutrales Unternehmen</li>
-              <li>Mehr als 10.000 installierte Solarmodule weltweit</li>
-            </ul>
-            <img src='R.jpg' alt='Unsere Erfolge' className='achievements-image' />
-          </section> */}
           
           <section className='company-contact fade-in'>
             <h2>Kontaktieren Sie uns</h2>
