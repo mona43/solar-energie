@@ -2,15 +2,16 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { useTranslation } from 'react-i18next';
 import './contact.css'; 
+import { Link } from 'react-router-dom';
 
 const Contact = () => {
-  const { t } = useTranslation(); // استخدام الترجمة بناءً على اللغة الحالية
+  const { t } = useTranslation();
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_grkb8ct', 'template_cgqb4o5', form.current, '91j3zMi9qTcErZ-x1')
+    emailjs.sendForm('service_xc6dpn3', 'template_lvsjmsw', form.current, 'pNHFwtq8OxVmlghtx')
       .then((result) => {
           console.log('Message sent:', result.text);
           alert(t('successMessage'));

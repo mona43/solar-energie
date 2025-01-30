@@ -2,6 +2,7 @@ import React from 'react';
 import { MDBCarousel, MDBCarouselItem } from "mdb-react-ui-kit";
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import { useTranslation } from "react-i18next";
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   const { t } = useTranslation();
@@ -45,7 +46,7 @@ const Home = () => {
         <div className="Photovoltaik-container" style={{ flex: '1' }}>
           <h2>{t("home.photovoltaikSection.energie.title")}</h2>
           <p>{t("home.photovoltaikSection.energie.description")}</p>
-          <button className="cta-button fade-in">{t("home.photovoltaikSection.energie.button")}</button>
+          <Link className="cta-button fade-in">{t("home.photovoltaikSection.energie.button")}</Link>
         </div>
         <div className="Photovoltaik-img fade-in">
           <img src="Energie.jpg" alt="" style={{ width: "100%" }} />
@@ -59,7 +60,7 @@ const Home = () => {
         <div className="Photovoltaik-container" style={{ flex: '1' }}>
           <h2>{t("home.photovoltaikSection.solar.title")}</h2>
           <p>{t("home.photovoltaikSection.solar.description")}</p>
-          <button className="cta-button fade-in">{t("home.photovoltaikSection.solar.button")}</button>
+          <Link className="cta-button fade-in">{t("home.photovoltaikSection.solar.button")}</Link>
         </div>
       </div>
     </div>
