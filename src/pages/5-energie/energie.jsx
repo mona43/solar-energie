@@ -1,6 +1,8 @@
 import React from 'react'
+import { useTranslation } from "react-i18next";
 
 const Energie = () => {
+  const { t } = useTranslation();
   document.addEventListener("scroll", function () {
     const fadeElements = document.querySelectorAll(".fade-in");
     const triggerBottom = window.innerHeight * 0.8;
@@ -19,10 +21,8 @@ const Energie = () => {
     <div>
         <div className='energie-container'>
             <div className="title-energie">
-                <h1 className='carousel-title'>Energie</h1>
-                <p className='carousel-description'>
-                Bei MFM Energie sind wir auf die Reparatur und Installation elektrischer Anlagen im Innen- und Außenbereich spezialisiert und bieten erstklassige Reparatur.
-                </p>
+                <h1 className='carousel-title'>{t("energyPage.Energie")}</h1>
+                <p className='carousel-description'>{t("energyPage.description")}</p>
             </div>
             <div>
                 <svg
@@ -53,10 +53,8 @@ const Energie = () => {
         </div>
         <div className="Photovoltaik-section ">
   <div className="Photovoltaik-container fade-in">
-    <h2>Wärmepumpe</h2>
-    <p>
-      Wärmepumpen sind umweltfreundliche Heizsysteme, die Wärme aus der Umgebungsluft, dem Erdreich oder dem Wasser nutzen, um Ihr Zuhause effizient zu heizen. Sie sind eine nachhaltige Lösung für die Energiewende und reduzieren die Heizkosten.
-    </p>
+    <h2>{t("energyPage.A")}</h2>
+    <p>{t("energyPage.B")}</p>
   </div>
   <div className="Photovoltaik-img fade-in">
     <img src="Wärmepumpe.jpg" alt="Wärmepumpe" />
@@ -66,24 +64,18 @@ const Energie = () => {
 <section className="solar-storage-section fade-in">
   <div className="storage-item fade-in">
     <img src="light-bulb-14-svgrepo-com.svg" alt="Energie sparen" className="icon" />
-    <h3>Was ist eine Wärmepumpe?</h3>
-    <p>
-      Eine Wärmepumpe ist ein Gerät, das Wärme aus der Umgebung aufnimmt und sie auf ein höheres Temperaturniveau anhebt, um Räume zu beheizen oder Warmwasser bereitzustellen. Sie ist eine effiziente und umweltfreundliche Heizlösung.
-    </p>
+    <h3>{t("energyPage.e")}</h3>
+    <p>{t("energyPage.j")}</p>
   </div>
   <div className="storage-item fade-in">
     <img src="working-work-svgrepo-com.svg" alt="Funktionsweise" className="icon" />
-    <h3>Wie funktioniert eine Wärmepumpe?</h3>
-    <p>
-      Wärmepumpen arbeiten nach dem Prinzip der Thermodynamik. Sie entziehen der Umwelt (Luft, Wasser oder Erde) Wärme und transportieren diese in Ihr Zuhause, wo sie für Heizung oder Warmwasserbereitung verwendet wird.
-    </p>
+    <h3>{t("energyPage.h")}</h3>
+    <p>{t("energyPage.i")}</p>
   </div>
   <div className="storage-item fade-in">
     <img src="savings-svgrepo-com.svg" alt="Kosteneinsparungen" className="icon" />
-    <h3>Vorteile der Wärmepumpe</h3>
-    <p>
-      Wärmepumpen bieten zahlreiche Vorteile, darunter hohe Energieeffizienz, geringe Betriebskosten und eine umweltfreundliche Lösung zur Wärmegewinnung. Sie tragen zur Reduzierung der CO2-Emissionen und der Energiekosten bei.
-    </p>
+    <h3>{t("energyPage.k")}</h3>
+    <p>{t("energyPage.l")}</p>
   </div>
 </section>
 
@@ -93,44 +85,37 @@ const Energie = () => {
                 <img src="Planung.jpg" alt="" />
             </div>
             <div className="Photovoltaik-container fade-in">
-                <h2>Planung</h2>
-                <p>
-                Zögern Sie nicht, uns zu kontaktieren. Wir werden Sie rasch mit Informationen betreffend Ihrer Wünsche und Bedürfnisse bedienen.
-                </p>
+                <h2>{t("energyPage.d")}</h2>
+                <p>{t("energyPage.H")}</p>
             </div>
-            
-            
         </div>
+
+
         <section className="solar-storage-section fade-in">
   <div className="storage-item fade-in">
     <img src="blueprint.svg" alt="" className="icon" />
-    <h3>Was bedeutet Planung?</h3>
-    <p>
-      Planung ist der Schlüssel für erfolgreiche Projekte. Sie umfasst die sorgfältige Analyse, Strukturierung und Vorbereitung aller notwendigen Schritte, um effiziente und fehlerfreie Ergebnisse zu gewährleisten.
-    </p>
+    <h3>{t("energyPage.z")}</h3>
+    <p>{t("energyPage.x")}</p>
   </div>
   <div className="storage-item fade-in">
     <img src="teamwork.svg" alt="" className="icon" />
-    <h3>Wie läuft die Planung ab?</h3>
-    <p>
-      Der Planungsprozess beginnt mit einer klaren Zielsetzung und einer detaillierten Analyse. Anschließend werden Strategien entwickelt, Zeitpläne erstellt und alle Ressourcen effizient koordiniert.
-    </p>
+    <h3>{t("energyPage.c")}</h3>
+    <p>{t("energyPage.v")}</p>
   </div>
   <div className="storage-item fade-in">
     <img src="success.svg" alt="" className="icon" />
-    <h3>Vorteile einer professionellen Planung</h3>
-    <p>
-      Eine professionelle Planung spart Zeit und Kosten, minimiert Risiken und sorgt für reibungslose Abläufe. Sie schafft die Grundlage für langfristigen Erfolg und nachhaltige Ergebnisse.
-    </p>
+    <h3>{t("energyPage.b")}</h3>
+    <p>{t("energyPage.n")}</p>
   </div>
         </section>
+
         <div className="light-bulb"></div>
         <img src="light.jpg" alt="" className='video-solar' />
+
         <div className="Photovoltaik-section fade-in">
             <div className="Photovoltaik-container fade-in">
-                <h2>Elektrokontrolle</h2>
-                <p>
-                Wir stellen die Kundenzufriedenheit an die erste Stelle. Wir streben eine dauerhafte, transparente und auf Vertrauen basierende Kundenzufriedenheit an. 
+                <h2>{t("energyPage.el")}</h2>
+                <p>{t("energyPage.er")}
                 </p>
             </div>
             <div className="Photovoltaik-img fade-in">
@@ -141,32 +126,24 @@ const Energie = () => {
         <section className="solar-storage-section fade-in">
   <div className="storage-item fade-in">
     <img src="check.svg" alt="" className="icon" />
-    <h3>Was ist Elektrokontrolle?</h3>
-    <p>
-      Elektrokontrolle umfasst die Überprüfung elektrischer Anlagen und Geräte, um deren Sicherheit und Funktionstüchtigkeit zu gewährleisten. Sie ist ein essenzieller Bestandteil moderner Elektrotechnik.
-    </p>
+    <h3>{t("energyPage.z")}</h3>
+    <p>{t("energyPage.x")}</p>
   </div>
   <div className="storage-item fade-in">
     <img src="inspection.svg" alt="" className="icon" />
-    <h3>Wie wird Elektrokontrolle durchgeführt?</h3>
-    <p>
-      Während der Elektrokontrolle werden elektrische Systeme auf Mängel, Überlastungen und mögliche Gefahrenquellen untersucht. Messgeräte und Prüfmethoden garantieren eine präzise Analyse.
-    </p>
+    <h3>{t("energyPage.r")}</h3>
+    <p>{t("energyPage.t")}</p>
   </div>
   <div className="storage-item fade-in">
     <img src="benefits.svg" alt="" className="icon" />
-    <h3>Vorteile der Elektrokontrolle</h3>
-    <p>
-      Regelmäßige Elektrokontrollen sorgen für maximale Sicherheit, verhindern Stromausfälle und minimieren das Risiko von Bränden. Sie tragen auch zur Langlebigkeit der elektrischen Anlagen bei.
-    </p>
+    <h3>{t("energyPage.y")}</h3>
+    <p>{t("energyPage.u")}</p>
   </div>
         </section>
         <div className="Photovoltaik-section fade-in">
             <div className="Photovoltaik-container fade-in">
-                <h2>Elektroinstallationen</h2>
-                <p>
-                Wir erbringen dem neusten Stand der Technik entsprechende Leistungen in einwandfreier Qualität, termingerecht und zu fairen, marktgerechten Preisen.
-                </p>
+                <h2>{t("energyPage.or")}</h2>
+                <p>{t("energyPage.op")}</p>
             </div>
             <div className="Photovoltaik-img fade-in">
                 <img src="Elektroinstallationen.jpg" alt="" />
@@ -176,24 +153,18 @@ const Energie = () => {
         <section className="solar-storage-section fade-in">
   <div className="storage-item fade-in">
     <img src="electric-refueli.svg" alt="" className="icon" />
-    <h3>Was sind Elektroinstallationen?</h3>
-    <p>
-      Elektroinstallationen beziehen sich auf die Planung, Installation und Wartung elektrischer Systeme, die in Gebäuden und Außenbereichen verwendet werden. Sie sind essenziell für eine sichere Stromversorgung.
-    </p>
+    <h3>{t("energyPage.qa")}</h3>
+    <p>{t("energyPage.qs")}</p>
   </div>
   <div className="storage-item fade-in">
     <img src="electric-tower.svg" alt="" className="icon" />
-    <h3>Wie funktionieren Elektroinstallationen?</h3>
-    <p>
-      Elektroinstallationen umfassen das Verlegen von Kabeln, die Einrichtung von Schaltkreisen und den Anschluss von Geräten. Unsere Fachkräfte sorgen für präzise und sichere Arbeiten.
-    </p>
+    <h3>{t("energyPage.qd")}</h3>
+    <p>{t("energyPage.qf")}</p>
   </div>
   <div className="storage-item fade-in">
     <img src="plug-circle.svg" alt="" className="icon" />
-    <h3>Vorteile professioneller Elektroinstallationen</h3>
-    <p>
-      Professionelle Elektroinstallationen bieten höchste Sicherheit, steigern die Energieeffizienz und verlängern die Lebensdauer elektrischer Anlagen. Sie sind eine Investition in Ihre Zukunft.
-    </p>
+    <h3>{t("energyPage.qg")}</h3>
+    <p>{t("energyPage.qh")}</p>
   </div>
         </section>
 

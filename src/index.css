@@ -545,7 +545,7 @@ h3 {
 }
 .Photovoltaik-img img {
   max-width: 100%;
-  min-height: auto;
+  max-height: 300px;
 }
 .carousel-description{
 height: 60px;
@@ -654,13 +654,13 @@ max-width: 300px;
   border-color: #F1B703;
   box-shadow: 0 0 5px rgba(241, 183, 3, 0.5); 
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 993px) {
   .menu-toggle {
     display: block;
   }
 
   .logo{
-    width: 90px;
+    width: 100px;
     margin-inline: 0 ;
   }
   .nav-links {

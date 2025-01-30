@@ -1,8 +1,10 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { useTranslation } from 'react-i18next';
 import './contact.css'; 
 
 const Contact = () => {
+  const { t } = useTranslation(); // استخدام الترجمة بناءً على اللغة الحالية
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -11,10 +13,10 @@ const Contact = () => {
     emailjs.sendForm('service_grkb8ct', 'template_cgqb4o5', form.current, '91j3zMi9qTcErZ-x1')
       .then((result) => {
           console.log('Message sent:', result.text);
-          alert('Ihre Nachricht wurde erfolgreich gesendet! 🎉');
+          alert(t('successMessage'));
       }, (error) => {
           console.log('Error:', error.text);
-          alert('Ein Fehler ist beim Senden aufgetreten, bitte versuchen Sie es erneut.');
+          alert(t('errorMessage'));
       });
   };
 
@@ -22,30 +24,30 @@ const Contact = () => {
     <section className="contact-section">
       <div className="container">
         <div className="contact-header">
-          <h1 className="contact-title">Kontaktieren Sie uns</h1>
-          <p className="contact-subtitle">Wir freuen uns auf Ihre Nachricht!</p>
+          <h1 className="contact-title">{t('contactTitle')}</h1>
+          <p className="contact-subtitle">{t('contactSubtitle')}</p>
         </div>
       </div>
       <div className="container contact-content">
         <div className="contact-form-container">
           <form ref={form} onSubmit={sendEmail} className="contact-form">
             <div className="form-group">
-              <input type="text" className="input-field" placeholder="Name" name="user_name" required />
+              <input type="text" className="input-field" placeholder={t('namePlaceholder')} name="user_name" required />
             </div>
             <div className="form-group">
-              <input type="text" className="input-field" placeholder="Telefonnummer" name="user_phone" required />
+              <input type="text" className="input-field" placeholder={t('phonePlaceholder')} name="user_phone" required />
             </div>
             <div className="form-group">
-              <input type="email" className="input-field" placeholder="E-Mail-Adresse" name="user_email" required />
+              <input type="email" className="input-field" placeholder={t('emailPlaceholder')} name="user_email" required />
             </div>
             <div className="form-group">
-              <textarea className="textarea-field" placeholder="Nachricht" rows="5" name="message" required></textarea>
+              <textarea className="textarea-field" placeholder={t('messagePlaceholder')} rows="5" name="message" required></textarea>
             </div>
-            <button type="submit" className="submit-btn">Senden</button>
+            <button type="submit" className="submit-btn">{t('submitButton')}</button>
           </form>
         </div>
         <div className="contact-image-container">
-          <img src="ai-generated-8919314.png" className="contact-image" alt="Kontaktieren Sie uns" />
+          <img src="ai-generated-8919314.png" className="contact-image" alt={t('contactTitle')} />
         </div>
       </div>
       <div className="map-section">

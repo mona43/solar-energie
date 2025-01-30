@@ -1,51 +1,55 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 function Footer() {
+  const { t } = useTranslation();
+
   return (
     <footer>
       <div className="footer-container">
-        
         <div className="footer-contact">
           <div className="contact-item">
             <img src="location.svg" alt="Location Icon" className="footer-icon" />
-            <a href="#">Lindenstrasse 21, 2552 Orpund</a>
+            <Link to="/contact">{t("footer.location")}</Link>
           </div>
           <div className="contact-item">
             <img src="phone.svg" alt="Phone Icon" className="footer-icon" />
-            <a href="tel:+41032508323">+41 032 508 323</a>
+            <Link to="tel:+41032508323">{t("footer.phone")}</Link>
           </div>
           <div className="contact-item">
             <img src="email.svg" alt="Email Icon" className="footer-icon" />
-            <a href="mailto:info@mfmelektro.ch">info@mfmelektro.ch</a>
+            <Link to="mailto:info@mfmelektro.ch">{t("footer.email")}</Link>
           </div>
         </div>
 
         <ul className="footer-links">
           <li>
-            <a href="/privacy">Datenschutzerklärung</a>
+            <Link to="/">{t("footer.privacy")}</Link>
           </li>
           <li>
-            <a href="/terms">Nutzungsbedingungen</a>
+            <Link to="/">{t("footer.terms")}</Link>
           </li>
           <li>
-            <a href="/contact">Kontaktieren Sie uns</a>
+            <Link to="/contact">{t("footer.contactUs")}</Link>
           </li>
         </ul>
 
         <div className="footer-social">
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+          <p>{t("footer.followUs")}:</p>
+          <Link to="https://www.facebook.com/share/1FAagzRDsV/" target="_blank" rel="noopener noreferrer">
             <img src="facebook.svg" alt="Facebook Icon" className="social-icon" />
-          </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+          </Link>
+          <Link to="/" target="_blank" rel="noopener noreferrer">
             <img src="twitter.svg" alt="Twitter Icon" className="social-icon" />
-          </a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+          </Link>
+          <Link to="/" target="_blank" rel="noopener noreferrer">
             <img src="instagram.svg" alt="Instagram Icon" className="social-icon" />
-          </a>
+          </Link>
         </div>
 
         <p className="footer-copyright">
-          &copy; {new Date().getFullYear()} Solar Energie. Alle Rechte vorbehalten.
+          &copy; {new Date().getFullYear()} Solar Energie. {t("footer.copyright")}
         </p>
       </div>
     </footer>

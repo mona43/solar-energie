@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import i18n from "i18next";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,54 +32,45 @@ function Navbar() {
         </button>
         <ul className={`nav-links ${isOpen ? "active" : ""}`}>
           <li>
-            <a
-              href="/"
+            <Link
+              to="/"
               className={activeLink === "/" ? "active" : ""}
               onClick={() => handleLinkClick("/")}>
               {i18n.t("navbar.home")}
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/solar"
+            <Link
+              to="/solar"
               className={activeLink === "/solar" ? "active" : ""}
               onClick={() => handleLinkClick("/solar")}>
               {i18n.t("navbar.solar")}
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/energie"
+            <Link
+              to="/energie"
               className={activeLink === "/energie" ? "active" : ""}
               onClick={() => handleLinkClick("/energie")}>
               {i18n.t("navbar.energy")}
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/services"
+            <Link
+              to="/services"
               className={activeLink === "/services" ? "active" : ""}
               onClick={() => handleLinkClick("/services")}>
               {i18n.t("navbar.services")}
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="/contact"
+            <Link
+              to="/contact"
               className={activeLink === "/contact" ? "active" : ""}
               onClick={() => handleLinkClick("/contact")}>
               {i18n.t("navbar.contact")}
-            </a>
+            </Link>
           </li>
-          <li>
-            <a
-              href="/zevrechner"
-              className={activeLink === "/zevrechner" ? "active" : ""}
-              onClick={() => handleLinkClick("/zevrechner")}>
-              {i18n.t("navbar.zevrechner")}
-            </a>
-          </li>
-
           <li className="language-switcher">
             <select
               value={currentLanguage}
