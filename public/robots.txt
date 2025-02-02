@@ -1,0 +1,9 @@
+
+User-agent: *
+Allow: /images/
+Allow: /css/
+Allow: /js/
+
+
+
+Sitemap:https://maps.app.goo.gl/RvRKcHcW46NaAT1f9/sitemap.xml

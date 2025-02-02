@@ -148,7 +148,7 @@ const resources = {
         qh:"Professionelle Elektroinstallationen bieten höchste Sicherheit, steigern die Energieeffizienz und verlängern die Lebensdauer elektrischer Anlagen. Sie sind eine Investition in Ihre Zukunft.",
       },
       companyPage: {
-        description: "est une entreprise leader dans les domaines des énergies renouvelables, de l’ingénierie électrique et des installations modernes. Nous représentons l’innovation, la qualité et un avenir durable.",
+        description: "ist ein führendes Unternehmen in den Bereichen erneuerbare Energien, Elektrotechnik und moderne Installationen. Wir stehen für Innovation, Qualität und eine nachhaltige Zukunft.",
         missionTitle: "Unsere Mission",
         missionP1: "Unser Ziel ist es, nachhaltige Energielösungen bereitzustellen, die die Umwelt schützen und unseren Kunden langfristige Einsparungen ermöglichen. Mit einem starken Fokus auf Kundenzufriedenheit und Umweltbewusstsein arbeiten wir daran, die Lebensqualität unserer Kunden zu verbessern.",
         missionP2: "Wir engagieren uns dafür, die besten Technologien zu nutzen, um innovative Lösungen zu entwickeln, die sowohl effizient als auch umweltfreundlich sind.",
@@ -332,7 +332,7 @@ const resources = {
         qh: "Les installations électriques professionnelles garantissent une sécurité optimale, améliorent l’efficacité énergétique et prolongent la durée de vie des équipements électriques. Elles constituent un investissement pour l’avenir."
       },
       companyPage: {
-        description: "ist ein führendes Unternehmen in den Bereichen erneuerbare Energien, Elektrotechnik und moderne Installationen. Wir stehen für Innovation, Qualität und eine nachhaltige Zukunft.",
+        description: "est une entreprise leader dans les domaines des énergies renouvelables, de l’ingénierie électrique et des installations modernes. Nous représentons l’innovation, la qualité et un avenir durable.",
         missionTitle: "Notre mission",
         missionP1: "Notre objectif est de fournir des solutions énergétiques durables qui protègent l'environnement et permettent à nos clients de réaliser des économies à long terme. En mettant l'accent sur la satisfaction client et la conscience environnementale, nous travaillons à améliorer la qualité de vie de nos clients.",
         missionP2: "Nous nous engageons à utiliser les meilleures technologies pour développer des solutions innovantes qui sont à la fois efficaces et respectueuses de l'environnement.",

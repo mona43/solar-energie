@@ -49,13 +49,13 @@ const Home = () => {
           <Link className="cta-button fade-in">{t("home.photovoltaikSection.energie.button")}</Link>
         </div>
         <div className="Photovoltaik-img fade-in">
-          <img src="Energie.jpg" alt="" style={{ width: "100%" }} />
+          <img src="Energie.jpg" alt="" style={{ width: "85%" }} />
         </div>
       </div>
-      
+
       <div className="Photovoltaik-section electro fade-in" role="link" onClick={() => window.location.href = '/solar'}>
         <div className="Photovoltaik-img fade-in">
-          <img src="Solar.jpg" alt="" style={{ width: "100%", height: "500px" }} />
+          <img src="Solar.jpg" alt="" style={{ width: "85%", height: "500px" }} />
         </div>
         <div className="Photovoltaik-container" style={{ flex: '1' }}>
           <h2>{t("home.photovoltaikSection.solar.title")}</h2>

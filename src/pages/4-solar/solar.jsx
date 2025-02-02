@@ -31,7 +31,7 @@ const Solar = () => {
           <p>{t('solarPage.photovoltaik.description')}</p>
         </div>
         <div className="Photovoltaik-img">
-          <img src="Photovoltaik.png" alt="" />
+          <img src="Photovoltaik.png" alt="" style={{width:"40%"}}/>
         </div>
       </div>
       <section className="solar-storage-section fade-in">
@@ -51,6 +51,7 @@ const Solar = () => {
         <p>{t("solarPage.photovoltaik.Photovoltaik1")}</p>
       </div>
       </section>
+      <div className="light-bulb"></div>
       <div className="Photovoltaik-section fade-in">
         <div className="Photovoltaik-container" style={{ maxWidth: "100%" }}>
           <h2>{t('solarPage.storageSystems.title')}</h2>
