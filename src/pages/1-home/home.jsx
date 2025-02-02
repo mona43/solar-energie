@@ -52,7 +52,7 @@ const Home = () => {
           <img src="Energie.jpg" alt="" style={{ width: "100%" }} />
         </div>
       </div>
-
+      
       <div className="Photovoltaik-section electro fade-in" role="link" onClick={() => window.location.href = '/solar'}>
         <div className="Photovoltaik-img fade-in">
           <img src="Solar.jpg" alt="" style={{ width: "100%", height: "500px" }} />
