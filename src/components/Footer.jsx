@@ -50,7 +50,7 @@ function Footer() {
         <div className="footer-social">
           <p>Partner mit</p>
           <Link to='https://ateamgmbh.ch/'>
-          <img src="/public/parrt.jpg" alt="" width={190} />
+          <img src="/parrt.jpg" alt="" width={190} />
           </Link>
         </div>
 
