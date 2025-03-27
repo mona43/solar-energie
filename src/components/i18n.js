@@ -194,8 +194,8 @@ const resources = {
         energy: "Énergie",
         services: "Entreprise",
         contact: "Contact",
-        de: "Allemand", // Langue allemande
-        fr: "Français", // Langue française
+        de: "Allemand", 
+        fr: "Français", 
       },
       footer: {
         location: "Lindenstrasse 21, 2552 Orpund",
