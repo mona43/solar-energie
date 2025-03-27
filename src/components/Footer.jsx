@@ -15,7 +15,7 @@ function Footer() {
           </div>
           <div className="contact-item">
             <img src="phone.svg" alt="Phone Icon" className="footer-icon" />
-            <Link to="tel:+41032508323">{t("footer.phone")}</Link>
+            <Link to="tel:+41325080323">{t("footer.phone")}</Link>
           </div>
           <div className="contact-item">
             <img src="email.svg" alt="Email Icon" className="footer-icon" />
@@ -45,6 +45,12 @@ function Footer() {
           </Link>
           <Link to="/" target="_blank" rel="noopener noreferrer">
             <img src="instagram.svg" alt="Instagram Icon" className="social-icon" />
+          </Link>
+        </div>
+        <div className="footer-social">
+          <p>Partner mit</p>
+          <Link to='https://ateamgmbh.ch/'>
+          <img src="/public/parrt.jpg" alt="" width={190} />
           </Link>
         </div>
 

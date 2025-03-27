@@ -2,13 +2,14 @@ import React from 'react';
 import { MDBCarousel, MDBCarouselItem } from "mdb-react-ui-kit";
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import { useTranslation } from "react-i18next";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Home = () => {
   const { t } = useTranslation();
 
   const slides = t("home.carousel.slides", { returnObjects: true });
 
+  const navigator= useNavigate()
   document.addEventListener("scroll", function () {
     const fadeElements = document.querySelectorAll(".fade-in");
     const triggerBottom = window.innerHeight * 0.8;
@@ -42,25 +43,25 @@ const Home = () => {
         </MDBCarousel>
       </div>
 
-      <div className="Photovoltaik-section fade-in" role="link" onClick={() => window.location.href = '/energie'}>
+      <div className="Photovoltaik-section fade-in" role="link" onClick={() => navigator('/energie') }>
         <div className="Photovoltaik-container" style={{ flex: '1' }}>
           <h2>{t("home.photovoltaikSection.energie.title")}</h2>
           <p>{t("home.photovoltaikSection.energie.description")}</p>
-          <Link className="cta-button fade-in">{t("home.photovoltaikSection.energie.button")}</Link>
+          <button className="cta-button fade-in">{t("home.photovoltaikSection.energie.button")}</button>
         </div>
         <div className="Photovoltaik-img fade-in">
           <img src="Energie.jpg" alt="" style={{ width: "85%" }} />
         </div>
       </div>
 
-      <div className="Photovoltaik-section electro fade-in" role="link" onClick={() => window.location.href = '/solar'}>
+      <div className="Photovoltaik-section electro fade-in" role="link" onClick={() => navigator('/solar') }>
         <div className="Photovoltaik-img fade-in">
           <img src="Solar.jpg" alt="" style={{ width: "85%", height: "500px" }} />
         </div>
         <div className="Photovoltaik-container" style={{ flex: '1' }}>
           <h2>{t("home.photovoltaikSection.solar.title")}</h2>
           <p>{t("home.photovoltaikSection.solar.description")}</p>
-          <Link className="cta-button fade-in">{t("home.photovoltaikSection.solar.button")}</Link>
+          <button className="cta-button fade-in">{t("home.photovoltaikSection.solar.button")}</button>
         </div>
       </div>
     </div>

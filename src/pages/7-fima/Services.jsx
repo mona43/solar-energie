@@ -78,7 +78,7 @@ const Services = () => {
       <p>{t('companyPage.contactDescription')}</p>
       <p>
         {t('companyPage.contactPhone')}  
-        <Link to="tel:+41032508323" ><strong> +41 032 508 323 </strong></Link> 
+        <Link to="tel:+41325080323" ><strong> +41325080323 </strong></Link> 
         {t('companyPage.contactEmail')}
         <Link to="mailto:info@mfmelektro.ch" ><strong> info@mfmelektro.ch </strong></Link>
       </p>

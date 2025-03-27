@@ -24,7 +24,7 @@ function Navbar() {
 
   return (
     <nav className="navbar1">
-    <img src="logonav.png" alt="Logo" className="logo" />
+    <img src="/WhatsApp Image 2025-03-22 at 20.59.14_170fa00a.jpg" alt="Logo" className="logo" /> 
       <div>
           
         <button className="menu-toggle" onClick={toggleMenu}>
